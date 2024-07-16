@@ -39,6 +39,7 @@ deb-src http://deb.debian.org/debian bookworm-backports main non-free-firmware c
 | `curl`     |      |
 | `ebook-speaker` | |
 | `filezilla` | |
+| `fonts-jetbrains-mono` | |
 | `font-manager` | |
 | `font-viewer` | |
 | `freecad` | |
@@ -66,6 +67,7 @@ deb-src http://deb.debian.org/debian bookworm-backports main non-free-firmware c
 | `ocrmypdf` | |
 | `obsstudio` | |
 | `openscad` | |
+| `papirus-icon-theme` | |
 | `partitionmanager` | |
 | `pdfarranger` | |
 | `pdfsam` | |
