@@ -8,23 +8,23 @@ My special computer designed for technical or scientific applications.
 ## Debian Software Repositories
 
 Add to `/etc/apt/sources.list`.
-```bash
-# deb cdrom#### [Debian GNU/Linux 12.6.0 _Bookworm_ #### Official amd64 DVD Binary-1 with firmware 20240629-10#### 19]/ bo>
+```bash                      
+# deb cdrom:[Debian GNU/Linux 12.6.0 _Bookworm_ - Official amd64 DVD Binary-1 with firmware 20240629-10:19]/ bo>
 
-deb http#### //deb.debian.org/debian/ bookworm main non-free-firmware contrib non-free
-deb-src http#### //deb.debian.org/debian/ bookworm main non-free-firmware contrib non-free
+deb http://deb.debian.org/debian/ bookworm main non-free-firmware contrib non-free
+deb-src http://deb.debian.org/debian/ bookworm main non-free-firmware contrib non-free
 
-deb http#### //security.debian.org/debian-security bookworm-security main non-free-firmware contrib non-free
-deb-src http#### //security.debian.org/debian-security bookworm-security main non-free-firmware contrib non-free
+deb http://security.debian.org/debian-security bookworm-security main non-free-firmware contrib non-free
+deb-src http://security.debian.org/debian-security bookworm-security main non-free-firmware contrib non-free
 
 # bookworm-updates, to get updates before a point release is made;
-# see https#### //www.debian.org/doc/manuals/debian-reference/ch02.en.html#_updates_and_backports
-deb http#### //deb.debian.org/debian/ bookworm-updates main non-free-firmware contrib non-free
-deb-src http#### //deb.debian.org/debian/ bookworm-updates main non-free-firmware contrib non-free
+# see https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_updates_and_backports
+deb http://deb.debian.org/debian/ bookworm-updates main non-free-firmware contrib non-free
+deb-src http://deb.debian.org/debian/ bookworm-updates main non-free-firmware contrib non-free
 
 # debian-backports
-deb http#### //deb.debian.org/debian bookworm-backports main non-free-firmware contrib non-free
-deb-src http#### //deb.debian.org/debian bookworm-backports main non-free-firmware contrib non-free
+deb http://deb.debian.org/debian bookworm-backports main non-free-firmware contrib non-free
+deb-src http://deb.debian.org/debian bookworm-backports main non-free-firmware contrib non-free
 ```
 ### List of Debian Sofware
 
