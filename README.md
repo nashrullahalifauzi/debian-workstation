@@ -24,100 +24,172 @@ deb-src http://deb.debian.org/debian/ bookworm-updates main non-free-firmware co
 deb http://deb.debian.org/debian bookworm-backports main non-free-firmware contrib non-free
 deb-src http://deb.debian.org/debian bookworm-backports main non-free-firmware contrib non-free
 ```
-### The Table of Debian Sofware
+### List of Debian Sofware
 
-| Name | Description | Install |
-| ---------- | ---- | ---- |
-| `atril` |  |  |
-| `audacious` |  |  |
-| `audacity` |  |  |
-| `blender` |  |  |
-| `btop` |  |  |
-| `calibre` |  |  |
-| `chromium` |  |  |
-| `color-picker` | | |
-| `cpu-x` |  |  |
-| `curl`     |      |      |
-| `ebook-speaker` | | |
-| `ffmpeg` | | |
-| `filezilla` | | |
-| `fonts-crosextra-caladea` | | |
-| `fonts-crosextra-carlito` | | |
-| `fonts-jetbrains-mono` | | |
-| `font-manager` | | |
-| `font-viewer` | | |
-| `freecad` | | |
-| `freeplane` | | |
-| `geany` | | |
-| `gdebi` | | |
-| `gimp` | | |
-| `git`      |      |      |
-| `gnome-power-manager` | | |
-| `gnucash` | | |
-| `gparted`  |      |      |
-| `gscan2pdf` | | |
-| `gsmartcontrol` | | |
-| `gstreamer1.0-vaapi` | | |
-| `gthumb` | | |
-| `hardinfo` | | |
-| `htop` |  |  |
-| `inkscape` | [![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=inkscape&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/inkscape) |  |
-| `img2pdf` | |  |
-| `kdenlive` | | |
-| `kicad` | [![kicad](https://img.shields.io/debian/v/kicad/bookworm-backports?style=for-the-badge&logo=debian&logoColor=c70036&label=kicad&color=c70036 "Electronic schematic and PCB design software.")](https://packages.debian.org/bookworm-backports/kicad) | <pre>apt install kicad/bookworm-backports</pre> |
-| `kraft` |  |  |
-| `krita` | | |
-| `libavcodec-extra` | | |
-| `librecad` | | |
-| `neofetch` | | |
-| `neovim` | | |
-| `nvidia-driver` | | |
-| `nvidia-detect` | | |
-| `ocrmypdf` | | |
-| `obsstudio` | | |
-| `openscad` | | |
-| `papirus-icon-theme` | | |
-| `partitionmanager` | | |
-| `pdfarranger` | | |
-| `pdfsam` | | |
-| `pdftk` | | |
-| `photocollage` | | |
-| `poppler-utils` | | |
-| `rar` | | |
-| `signal` | | |
-| `scribus` | | |
-| `slic3r` | | |
-| `sweethome3d` | | |
-| `tesseract-ocr` | | |
-| `terminator` | | |
-| `thunar` | | |
-| `thunderbird` | | |
-| ` ttf-mscorefonts-installer` | | |
-| `ufw` | | |
-| `unrar` | | |
-| `usbview` | | |
-| `vlc` | | |
-| `wifi-qr` | | |
-| `wget`     |      |      |
-|            |                                        |                                        |
-|                       |                                        |                                        |
+`atril`
+: 
+`audacious`
+:
+`audacity`
+:
+`blender`
+:
+`btop`
+:
+`calibre`
+:
+`chromium`
+:
+`color-picker`
+:
+`cpu-x`
+:
+`curl`            
+:
+`ebook-speaker`
+:
+`ffmpeg`
+:
+`filezilla`
+:
+`fonts-crosextra-caladea`
+:
+`fonts-crosextra-carlito`
+:
+`fonts-jetbrains-mono`
+:
+`font-manager`
+:
+`font-viewer`
+:
+`freecad`
+:
+`freeplane`
+:
+`geany`
+:
+`gdebi`
+:
+`gimp`
+:
+`git`             
+:
+`gnome-power-manager`
+:
+`gnucash`
+:
+`gparted`         
+:
+`gscan2pdf`
+:
+`gsmartcontrol`
+:
+`gstreamer1.0-vaapi`
+:
+`gthumb`
+:
+`hardinfo`
+:
+`htop`
+:
+`inkscape`
+: [![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=inkscape&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/inkscape) 
+`img2pdf` 
+:
+`kdenlive`
+:
+`kicad`
+: [![kicad](https://img.shields.io/debian/v/kicad/bookworm-backports?style=for-the-badge&logo=debian&logoColor=c70036&label=kicad&color=c70036 "Electronic schematic and PCB design software.")](https://packages.debian.org/bookworm-backports/kicad)
+
+```bash
+apt install kicad/bookworm-backports
+```
+`kraft`
+:
+`krita`
+:
+`libavcodec-extra`
+:
+`librecad`
+:
+`neofetch`
+:
+`neovim`
+:
+`nvidia-driver`
+:
+`nvidia-detect`
+:
+`ocrmypdf`
+:
+`obsstudio`
+:
+`openscad`
+:
+`papirus-icon-theme`
+:
+`partitionmanager`
+:
+`pdfarranger`
+:
+`pdfsam`
+:
+`pdftk`
+:
+`photocollage`
+:
+`poppler-utils`
+:
+`rar`
+:
+`signal`
+:
+`scribus`
+:
+`slic3r`
+:
+`sweethome3d`
+:
+`tesseract-ocr`
+:
+`terminator`
+:
+`thunar`
+:
+`thunderbird`
+:
+` ttf-mscorefonts-installer`
+:
+`ufw`
+:
+`unrar`
+:
+`usbview`
+:
+`vlc`
+:
+`wifi-qr`
+:
+`wget`
+:
 
 ## Non-Debian Software Repositories
 
-| Name               | Description |
-| ------------------ | ----------- |
-| `chrome`           |             |
-| `odafileconverter` |             |
-| `pandoc`           |             |
-| `typora`           |             |
-| `via`              |             |
-| `vscode`           |             |
-| `zotero`           |             |
-|                    |             |
-|                    |             |
-|                    |             |
 
-
+`chrome`
+:
+`odafileconverter`
+:
+`pandoc`
+:
+`typora`
+:
+`via`
+:
+`vscode`
+:
+`zotero`
+:
 
 ## Notes
 
