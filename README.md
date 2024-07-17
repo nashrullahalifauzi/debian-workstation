@@ -62,9 +62,9 @@ deb-src http://deb.debian.org/debian bookworm-backports main non-free-firmware c
 | `hardinfo` | | |
 | `htop` |  |  |
 | `inkscape` | [![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=inkscape&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/inkscape) |  |
-| `img2pdf` | | |
+| `img2pdf` | |  |
 | `kdenlive` | | |
-| `kicad` | [![kicad](https://img.shields.io/debian/v/kicad/bookworm-backports?style=for-the-badge&logo=debian&logoColor=c70036&label=kicad&color=c70036 "Electronic schematic and PCB design software.")](https://packages.debian.org/bookworm-backports/kicad) | `apt install kicad/bookworm-backports` |
+| `kicad` | [![kicad](https://img.shields.io/debian/v/kicad/bookworm-backports?style=for-the-badge&logo=debian&logoColor=c70036&label=kicad&color=c70036 "Electronic schematic and PCB design software.")](https://packages.debian.org/bookworm-backports/kicad) | <pre>apt install kicad/bookworm-backports</pre> |
 | `kraft` |  |  |
 | `krita` | | |
 | `libavcodec-extra` | | |
@@ -127,7 +127,5 @@ Delete Gnome game:
 apt purge gnome-games
 ```
 
-
-
-
+## Credits
 
