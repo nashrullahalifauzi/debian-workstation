@@ -1,0 +1,12 @@
+[user]
+	name = Nashrullah Ali Fauzi
+	email = 114306194+nashrullahalifauzi@users.noreply.github.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[core]
+	compression = 0
+	autocrlf = input
