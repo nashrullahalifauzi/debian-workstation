@@ -388,7 +388,7 @@ apt install atril
 ## Non-Debian Software Repositories
 
 #### `chrome`
-#### `gh` ![atril](https://img.shields.io/badge/git-github_cli?style=flat-square)
+#### `gh` ![atril](https://img.shields.io/badge/github_cli-git?style=flat-square)
 ```bash
 wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
 && chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
