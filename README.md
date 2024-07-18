@@ -28,6 +28,13 @@ deb-src http://deb.debian.org/debian bookworm-backports main non-free-firmware c
 ```
 ### List of Debian Sofware
 
+#### `apt-transport-https` ![atril](https://img.shields.io/badge/debian-apt_transport_https-blue?style=flat-square)
+[![apt-transport-https](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=apt-transport-https&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/apt-transport-https)
+
+```bash
+apt install apt-transport-https
+```
+
 #### `atril` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
 
@@ -399,6 +406,16 @@ wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | tee /e
 #### `odafileconverter`
 #### `pandoc`
 #### `typora`
+```bash
+curl https://typora.io/linux/public-key.asc | gpg --dearmor > /etc/apt/keyrings/typora.gpg > /dev/null
+
+chmod go+r /etc/apt/keyrings/typora.gpg
+
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/typora.gpg] https://typora.io/linux ./" | tee /etc/apt/sources.list.d/typora.list > /dev/null
+
+apt update
+apt install typora
+```
 #### `via`
 #### `vscode`
 #### `zotero`
