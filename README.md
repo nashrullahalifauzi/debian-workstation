@@ -333,7 +333,12 @@ apt install atril
 [![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
 ```bash
 apt install atril
-```#### `terminator`
+```
+#### `terminator` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+```bash
+apt install atril
+```
 #### `thunar` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
 ```bash
@@ -383,6 +388,14 @@ apt install atril
 ## Non-Debian Software Repositories
 
 #### `chrome`
+#### `gh` ![atril](https://img.shields.io/badge/git-github_cli?style=flat-square)
+```bash
+wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
+&& chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+&& apt update
+&& apt install gh
+```
 #### `odafileconverter`
 #### `pandoc`
 #### `typora`
