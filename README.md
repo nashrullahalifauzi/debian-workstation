@@ -28,6 +28,8 @@ deb-src http://deb.debian.org/debian bookworm-backports main non-free-firmware c
 ```
 ### List of Debian Sofware
 
+#### `lshw`
+
 #### `apt-transport-https` ![atril](https://img.shields.io/badge/debian-apt_transport_https-blue?style=flat-square)
 [![apt-transport-https](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=apt-transport-https&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/apt-transport-https)
 
@@ -108,6 +110,8 @@ apt install atril
 ```bash
 apt install atril
 ```
+#### `fonts-inter`
+ 
 #### `fonts-crosextra-carlito`  ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
 ```bash
