@@ -264,13 +264,14 @@ apt install neofetch
 ```bash
 apt install neovim
 ```
-#### `nvidia-driver` ![nvidia-driver](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![nvidia-driver](https://img.shields.io/debian/v/nvidia-driver/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=nvidia-driver&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/nvidia-driver)
+#### `nvidia-tesla-470-driver` ![nvidia-driver](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![nvidia-tesla-470-driver](https://img.shields.io/debian/v/nvidia-tesla-470-driver/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=nvidia-tesla-470-driver&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/nvidia-tesla-470-driver)
 ```bash
-apt install nvidia-driver
+apt install nvidia-tesla-470-driver
 ```
 #### `nvidia-detect` ![nvidia-detect](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![nvidia-detect](https://img.shields.io/debian/v/nvidia-detect/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=nvidia-detect&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/nvidia-detect)
+
 ```bash
 apt install nvidia-detect
 ```
@@ -314,102 +315,100 @@ apt install pdfsam
 ```bash
 apt install pdftk
 ```
-#### `photocollage` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `photocollage` ![photocollage](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![photocollage](https://img.shields.io/debian/v/photocollage/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=photocollage&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/photocollage)
 ```bash
-apt install atril
+apt install photocollage
 ```
-#### `poppler-utils` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `poppler-utils` ![poppler-utils](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![poppler-utils](https://img.shields.io/debian/v/poppler-utils/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=poppler-utils&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/poppler-utils)
 ```bash
-apt install atril
+apt install poppler-utils
 ```
-#### `printer-driver-all`  ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `printer-driver-all`  ![printer-driver-all](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![printer-driver-all](https://img.shields.io/debian/v/printer-driver-all/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=printer-driver-all&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/printer-driver-all)
 ```bash
-apt install atril
+apt install printer-driver-all
 ```
-
-#### `rar` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `rar` ![rar](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![rar](https://img.shields.io/debian/v/rar/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=rar&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/rar)
 ```bash
-apt install atril
+apt install rar
 ```
-#### `signal` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `signal` ![signal](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![signal](https://img.shields.io/debian/v/signal/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=signal&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/signal)
 ```bash
-apt install atril
+apt install signal
 ```
-#### `scribus` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `scribus` ![scribus](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![scribus](https://img.shields.io/debian/v/scribus/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=scribus&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/scribus)
 ```bash
-apt install atril
+apt install scribus
 ```
-#### `slic3r` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `slic3r` ![slic3r](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![slic3r](https://img.shields.io/debian/v/slic3r/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=slic3r&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/slic3r)
 ```bash
-apt install atril
+apt install slic3r
 ```
-#### `sweethome3d` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `sweethome3d` ![sweethome3d](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![sweethome3d](https://img.shields.io/debian/v/sweethome3d/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=sweethome3d&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/sweethome3d)
 ```bash
-apt install atril
+apt install sweethome3d
 ```
-#### `tesseract-ocr` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `tesseract-ocr` ![tesseract-ocr](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![tesseract-ocr](https://img.shields.io/debian/v/tesseract-ocr/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=tesseract-ocr&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/tesseract-ocr)
 ```bash
-apt install atril
+apt install tesseract-ocr
 ```
-#### `terminator` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `terminator` ![terminator](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![terminator](https://img.shields.io/debian/v/terminator/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=terminator&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/terminator)
 ```bash
-apt install atril
+apt install terminator
 ```
-#### `thunar` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `thunar` ![thunar](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![thunar](https://img.shields.io/debian/v/thunar/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=thunar&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/thunar)
 ```bash
-apt install atril
+apt install thunar
 ```
-#### `thunderbird` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `thunderbird` ![thunderbird](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![thunderbird](https://img.shields.io/debian/v/thunderbird/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=thunderbird&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/thunderbird)
 ```bash
-apt install atril
+apt install thunderbird
 ```
-#### ` ttf-mscorefonts-installer` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `ttf-mscorefonts-installer` ![ttf-mscorefonts-installer](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![ttf-mscorefonts-installer](https://img.shields.io/debian/v/ttf-mscorefonts-installer/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=ttf-mscorefonts-installer&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/ttf-mscorefonts-installer)
 ```bash
-apt install atril
+apt install ttf-mscorefonts-installer
 ```
-#### `ufw` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `ufw` ![ufw](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![ufw](https://img.shields.io/debian/v/ufw/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=ufw&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/ufw)
 ```bash
-apt install atril
+apt install ufw
 ```
-#### `unrar` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `unrar` ![unrar](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![unrar](https://img.shields.io/debian/v/unrar/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=unrar&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/unrar)
 ```bash
-apt install atril
+apt install unrar
 ```
-#### `usbview` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `usbview` ![usbview](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![usbview](https://img.shields.io/debian/v/usbview/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=usbview&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/usbview)
 ```bash
-apt install atril
+apt install usbview
 ```
-#### `vlc` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `vlc` ![vlc](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![vlc](https://img.shields.io/debian/v/vlc/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=vlc&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/vlc)
 ```bash
-apt install atril
+apt install vlc
 ```
-#### `wifi-qr` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `wget` ![wget](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![wget](https://img.shields.io/debian/v/wget/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=wget&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/wget)
 ```bash
-apt install atril
+apt install wget
 ```
-#### `wget` ![atril](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/atril)
+#### `wifi-qr` ![wifi-qr](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![wifi-qr](https://img.shields.io/debian/v/wifi-qr/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=wifi-qr&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/wifi-qr)
 ```bash
-apt install atril
+apt install wifi-qr
 ```
 
 ## Non-Debian Software Repositories
@@ -427,14 +426,7 @@ wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | tee /e
 #### `pandoc`
 #### `typora`
 ```bash
-curl https://typora.io/linux/public-key.asc | gpg --dearmor > /etc/apt/keyrings/typora.gpg > /dev/null
 
-chmod go+r /etc/apt/keyrings/typora.gpg
-
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/typora.gpg] https://typora.io/linux ./" | tee /etc/apt/sources.list.d/typora.list > /dev/null
-
-apt update
-apt install typora
 ```
 #### `via`
 #### `vscode`
