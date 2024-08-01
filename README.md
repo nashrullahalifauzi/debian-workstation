@@ -1,6 +1,6 @@
 # Debian Workstation
 
-My special computer designed for technical or scientific applications.
+My personal computer desktop and/or laptop designed for technical or scientific applications.
 
 > [!WARNING]
 > This setup under construction!
@@ -212,10 +212,11 @@ apt install htop
 #### `inkscape` ![inkscape](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![inkscape](https://img.shields.io/debian/v/inkscape/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=inkscape&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/inkscape)
 ```bash
-apt install htop
+apt install inkscape
 ```
 #### `img2pdf` 
 [![img2pdf](https://img.shields.io/debian/v/img2pdf/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=img2pdf&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/img2pdf)
+
 ```bash
 apt install img2pdf
 ```
@@ -265,7 +266,15 @@ apt install neofetch
 apt install neovim
 ```
 #### `nvidia-tesla-470-driver` ![nvidia-driver](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+
+Read the docs:
+
+1. [https://wiki.debian.org/NvidiaGraphicsDrivers](https://wiki.debian.org/NvidiaGraphicsDrivers)
+2. [https://wiki.debian.org/NVIDIA%20Optimus#Using_NVIDIA_GPU_as_the_primary_GPU](https://wiki.debian.org/NVIDIA%20Optimus#Using_NVIDIA_GPU_as_the_primary_GPU)
+3. [https://www.nvidia.com/en-us/geforce/gaming-laptops/geforce-920m/](https://www.nvidia.com/en-us/geforce/gaming-laptops/geforce-920m/)
+
 [![nvidia-tesla-470-driver](https://img.shields.io/debian/v/nvidia-tesla-470-driver/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=nvidia-tesla-470-driver&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/nvidia-tesla-470-driver)
+
 ```bash
 apt install nvidia-tesla-470-driver
 ```
@@ -280,10 +289,11 @@ apt install nvidia-detect
 ```bash
 apt install ocrmypdf
 ```
-#### `obsstudio` ![obsstudio](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![obsstudio](https://img.shields.io/debian/v/obsstudio/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=obsstudio&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/obsstudio)
+#### `obs-studio` ![obs-studio](https://img.shields.io/badge/screencast_apss-video_recorder-blue?style=flat-square)
+[![obsstudio](https://img.shields.io/debian/v/obs-studio/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=obs-studio&color=c70036 "screen-recording program")](https://packages.debian.org/bookworm/obsstudio)
+
 ```bash
-apt install obsstudio
+apt install obs-studio
 ```
 #### `openscad` ![openscad](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![openscad](https://img.shields.io/debian/v/openscad/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=openscad&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/openscad)
@@ -424,13 +434,80 @@ wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | tee /e
 ```
 #### `odafileconverter`
 #### `pandoc`
+
+Download the latest release of Pandoc via `https://github.com/jgm/pandoc/releases/latest`.
+
+```bash
+wget https://github.com/jgm/pandoc/releases/download/3.3/pandoc-3.3-1-amd64.deb
+```
+
+Install `pandoc-3.3-1-amd64.deb` via Gdebi.
+
+#### `qmk-firmware`
+
+Visit `https://github.com/qmk/qmk_fpm`
+
+```bash
+echo "deb https://linux.qmk.fm/ $(lsb_release --codename --short) main" | tee /etc/apt/sources.list.d/qmk.list
+wget -qO - https://linux.qmk.fm/gpg_pubkey.txt | gpg --dearmor | tee /etc/apt/trusted.gpg.d/qmk-gpg-pubkey.gpg > /dev/null
+apt update && upgrade
+apt install qmk
+```
+
+
+
 #### `typora`
 ```bash
-
+wget -qO - https://typora.io/linux/public-key.asc | tee /etc/apt/trusted.gpg.d/typora.asc
+add-apt-repository 'deb https://typora.io/linux ./'
+apt update && apt upgrade
+apt install typora
 ```
-#### `via`
 #### `vscode`
+
+```bash
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc
+gpg --dearmor > packages.microsoft.gpg
+install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | tee /etc/apt/sources.list.d/vscode.list > /dev/null
+rm -f packages.microsoft.gpg
+apt update && apt upgrade
+apt install code
+```
+
 #### `zotero`
+
+Visit [https://www.zotero.org/download/](https://www.zotero.org/download/) and download the latest version of Zotero. As `root`:
+
+```bash
+cd /opt
+wget https://download.zotero.org/client/release/6.0.35/Zotero-6.0.35_linux-x86_64.tar.bz2
+tar -xjvf Zotero-6.0.35_linux-x86_64.tar.bz2
+rm -rf Zotero-6.0.35_linux-x86_64.tar.bz2
+mkdir zotero
+cd Zotero_linux-x86_64
+mv * /opt/zotero/
+cd /opt
+rm -rf Zotero_linux-x86_64
+cd zotero
+chmod +x set_launcher_icon
+./set_launcher_icon # or bash set_launcher_icon
+ln -s zotero.desktop /home/naf/.local/share/applications/zotero.desktop
+```
+
+##### `zotero-better-bibtex`
+
+Visit `https://github.com/retorquere/zotero-better-bibtex/releases/latest` and download:
+
+```bash
+wget https://github.com/retorquere/zotero-better-bibtex/releases/download/v6.7.214/zotero-better-bibtex-6.7.214.xpi
+```
+
+1. In the main menu go to Tools > Add-ons
+2. Select ‘Extensions’
+3. Click on the gear in the top-right corner and choose ‘Install Add-on From File…’
+4. Choose .xpi that you’ve just downloaded, click ‘Install’
+5. Restart Zotero if you’re using Zotero 6
 
 ## Notes
 
