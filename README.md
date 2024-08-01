@@ -59,8 +59,9 @@ apt install audacity
 ```bash
 apt install blender
 ```
-#### `btop`  ![btop](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+#### `btop`  ![btop](https://img.shields.io/badge/office_application-system_monitor-blue?style=flat-square)
 [![btop](https://img.shields.io/debian/v/btop/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=btop&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/btop)
+
 ```bash
 apt install btop
 ```
@@ -516,6 +517,18 @@ Delete Gnome games.
 ```bash
 apt purge gnome-games
 ```
+
+Set `grub` background image `/etc/default/grub`.
+
+```bash
+GRUB_BACKGROUND=""
+```
+
+```bash
+update-grub
+```
+
+
 
 ## Credits
 
