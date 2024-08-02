@@ -346,11 +346,6 @@ apt install printer-driver-all
 ```bash
 apt install rar
 ```
-#### `signal` ![signal](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![signal](https://img.shields.io/debian/v/signal/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=signal&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/signal)
-```bash
-apt install signal
-```
 #### `scribus` ![scribus](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![scribus](https://img.shields.io/debian/v/scribus/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=scribus&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/scribus)
 ```bash
@@ -502,6 +497,19 @@ Visit `https://github.com/retorquere/zotero-better-bibtex/releases/latest` and d
 
 ```bash
 wget https://github.com/retorquere/zotero-better-bibtex/releases/download/v6.7.214/zotero-better-bibtex-6.7.214.xpi
+```
+
+#### `signal` ![signal](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![signal](https://img.shields.io/debian/v/signal/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=signal&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/signal)
+```bash
+wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
+cat signal-desktop-keyring.gpg | tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
+
+echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
+  tee /etc/apt/sources.list.d/signal-xenial.list
+  
+apt update
+apt install signal
 ```
 
 1. In the main menu go to Tools > Add-ons
