@@ -562,7 +562,7 @@ GRUB_BACKGROUND=""
 update-grub
 ```
 
-
+- `https://wiki.debian.org/GDM#Customizing_the_GDM_appearance`
 
 ## Credits
 
