@@ -371,6 +371,13 @@ apt install tesseract-ocr
 ```bash
 apt install terminator
 ```
+
+#### `texlive` ![texlive](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![texlive](https://img.shields.io/debian/v/texlive/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=texlive&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/texlive)
+```bash
+apt install texlive
+```
+
 #### `thunar` ![thunar](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![thunar](https://img.shields.io/debian/v/thunar/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=thunar&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/thunar)
 ```bash
