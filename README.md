@@ -28,6 +28,20 @@ deb-src http://deb.debian.org/debian bookworm-backports main non-free-firmware c
 ```
 ### List of Debian Sofware
 
+#### `apache2` ![apache2](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![apache2](https://img.shields.io/debian/v/apache2/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=apache2&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/apache2)
+
+```bash
+apt install apache2
+```
+
+#### `apache2-doc` ![apache2](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![apache2](https://img.shields.io/debian/v/apache2-doc/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=apache2-doc&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/apache2-doc)
+
+```bash
+apt install apache2-doc
+```
+
 #### `apt-transport-https` ![apt-transport-https](https://img.shields.io/badge/debian-apt_transport_https-blue?style=flat-square)
 [![apt-transport-https](https://img.shields.io/debian/v/apt-transport-https/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=apt-transport-https&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/apt-transport-https)
 
@@ -331,6 +345,12 @@ apt install pdftk
 ```bash
 apt install photocollage
 ```
+
+#### `php` ![php](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![photocollage](https://img.shields.io/debian/v/php/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=php&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/php)
+```bash
+apt install php
+
 #### `poppler-utils` ![poppler-utils](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![poppler-utils](https://img.shields.io/debian/v/poppler-utils/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=poppler-utils&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/poppler-utils)
 ```bash
@@ -458,7 +478,7 @@ apt install qmk
 ```
 
 #### `signal` ![signal](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![signal](https://img.shields.io/debian/v/signal/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=signal&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/signal)
+
 ```bash
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
 cat signal-desktop-keyring.gpg | tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
