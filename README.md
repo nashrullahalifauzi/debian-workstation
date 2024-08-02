@@ -450,7 +450,18 @@ apt update && upgrade
 apt install qmk
 ```
 
+#### `signal` ![signal](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![signal](https://img.shields.io/debian/v/signal/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=signal&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/signal)
+```bash
+wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
+cat signal-desktop-keyring.gpg | tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
 
+echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
+  tee /etc/apt/sources.list.d/signal-xenial.list
+  
+apt update
+apt install signal
+```
 
 #### `typora`
 ```bash
@@ -499,24 +510,12 @@ Visit `https://github.com/retorquere/zotero-better-bibtex/releases/latest` and d
 wget https://github.com/retorquere/zotero-better-bibtex/releases/download/v6.7.214/zotero-better-bibtex-6.7.214.xpi
 ```
 
-#### `signal` ![signal](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
-[![signal](https://img.shields.io/debian/v/signal/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=signal&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/signal)
-```bash
-wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
-cat signal-desktop-keyring.gpg | tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
-
-echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
-  tee /etc/apt/sources.list.d/signal-xenial.list
-  
-apt update
-apt install signal
-```
-
 1. In the main menu go to Tools > Add-ons
 2. Select ‘Extensions’
 3. Click on the gear in the top-right corner and choose ‘Install Add-on From File…’
 4. Choose .xpi that you’ve just downloaded, click ‘Install’
 5. Restart Zotero if you’re using Zotero 6
+
 
 ## Notes
 
