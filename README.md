@@ -8,6 +8,7 @@ My personal computer desktop and/or laptop designed for technical or scientific 
 ## Debian Software Repositories
 
 Add to `/etc/apt/sources.list`.
+
 ```bash                      
 # deb cdrom:[Debian GNU/Linux 12.6.0 _Bookworm_ - Official amd64 DVD Binary-1 with firmware 20240629-10:19]/ bo>
 
