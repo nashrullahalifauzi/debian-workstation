@@ -245,6 +245,13 @@ apt install kdenlive
 [![kicad](https://img.shields.io/debian/v/kicad/bookworm-backports?style=for-the-badge&logo=debian&logoColor=c70036&label=kicad&color=c70036 "Electronic schematic and PCB design software.")](https://packages.debian.org/bookworm-backports/kicad)
 ```bash
 apt install kicad/bookworm-backports
+apt install kicad-footprints/bookworm-backports
+apt install kicad-libraries/bookworm-backports
+apt install kicad-packages3d/bookworm-backports
+apt install kicad-symbols/bookworm-backports
+apt install kicad-templates/bookworm-backports
+apt install kicad-doc-en/bookworm-backports
+apt install kicad-demos/bookworm-backports
 ```
 #### `kraft` ![kraft](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![kraft](https://img.shields.io/debian/v/kraft/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=kraft&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/kraft)
