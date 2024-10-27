@@ -527,7 +527,7 @@ Visit [https://www.zotero.org/download/](https://www.zotero.org/download/) and d
 
 ```bash
 cd /opt
-wget https://download.zotero.org/client/release/6.0.35/Zotero-6.0.35_linux-x86_64.tar.bz2
+wget https://download.zotero.org/client/release/7.0.8/Zotero-7.0.8_linux-x86_64.tar.bz2
 tar -xjvf Zotero-6.0.35_linux-x86_64.tar.bz2
 rm -rf Zotero-6.0.35_linux-x86_64.tar.bz2
 mkdir zotero
@@ -618,6 +618,27 @@ And:
 ```bash
 dpkg-reconfigure gdm3
 ```
+
+## Add on
+
+- https://extensions.gnome.org/extension/4269/alphabetical-app-grid/
+
+```bash
+apt install nautilus-admin
+
+libxcb-xtest0
+
+```
+
+- Zoom
+- Bibtex
+
+
+## Flathub
+
+- https://flathub.org/apps/org.kde.kdenlive
+- https://flathub.org/apps/com.obsproject.Studio
+- https://flathub.org/apps/dev.storyapps.starc
 
 ## Credits
 
