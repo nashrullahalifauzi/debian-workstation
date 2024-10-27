@@ -628,10 +628,16 @@ apt install nautilus-admin
 
 libxcb-xtest0
 
-```
+cockpit
 
+```
+- https://cockpit-project.org/running.html#debian
 - Zoom
 - Bibtex
+
+### Configure LAMP
+
+- https://wiki.debian.org/LaMp
 
 
 ## Flathub
