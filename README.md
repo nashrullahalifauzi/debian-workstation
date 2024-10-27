@@ -107,6 +107,9 @@ apt install curl
 ```
 #### `ebook-speaker`  ![ebook-speaker](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![ebook-speaker](https://img.shields.io/debian/v/ebook-speaker/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=ebook-speaker&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/ebook-speaker)
+
+#### `dconf-editor`
+
 ```bash
 apt install ebook-speaker
 ```
@@ -554,11 +557,13 @@ wget https://github.com/retorquere/zotero-better-bibtex/releases/download/v6.7.2
 
 ## Notes
 
-Delete Gnome games.
+### Delete Gnome games.
 
 ```bash
 apt purge gnome-games
 ```
+
+### Change Background Grub
 
 Set `grub` background image `/etc/default/grub`.
 
@@ -570,7 +575,48 @@ GRUB_BACKGROUND=""
 update-grub
 ```
 
+### Change GDM Background
+
+Copy image to `/usr/share/images/vendor-logos/`:
+
+```bash
+cp syenasweta-logo-text-version-64.svg /usr/share/images/vendor-logos/
+```
+
+Edit file in ` /etc/gdm3/greeter.dconf-defaults`. Add this:
+
+```bash
+# Login manager options
+# =====================
+[org/gnome/login-screen]
+#logo='/usr/share/images/vendor-logos/logo-text-version-64.png'
+logo='/usr/share/images/vendor-logos/syenasweta-logo-text-version-64.svg'
+```
+
+And:
+
+```bash
+dpkg-reconfigure gdm3
+```
+
 - `https://wiki.debian.org/GDM#Customizing_the_GDM_appearance`
+
+### Disable the user list
+
+
+Edit file in ` /etc/gdm3/greeter.dconf-defaults`. Uncomment `disable-user-list=true`:
+
+```bash
+# - Disable user list
+# disable-user-list=true
+disable-user-list=true
+```
+
+And:
+
+```bash
+dpkg-reconfigure gdm3
+```
 
 ## Credits
 
