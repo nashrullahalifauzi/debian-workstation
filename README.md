@@ -87,10 +87,22 @@ apt install calibre
 ```
 #### `chromium`  ![chromium](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![chromium](https://img.shields.io/debian/v/chromium/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=chromium&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/chromium)
+
 ```bash
 apt install chromium
 ```
+#### `cocpit`
+
+[![cockpit](https://img.shields.io/debian/v/chromium/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=cockpit&color=c70036 "Web Console for Linux servers")](https://packages.debian.org/bookworm-backports/cockpit)
+
+```bash
+apt install cockpit/bookworm-backports
+```
+
+
+
 #### `color-picker`  ![color-picker](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+
 [![color-picker](https://img.shields.io/debian/v/color-picker/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=color-picker&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/color-picker)
 ```bash
 apt install color-picker
@@ -273,15 +285,37 @@ apt install libavcodec-extra
 ```
 #### `librecad` ![librecad](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![librecad](https://img.shields.io/debian/v/librecad/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=librecad&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/librecad)
+
 ```bash
 apt install librecad
 ```
+#### `libxcb-xtest0`
+
+[![libxcb-xtest0](https://img.shields.io/debian/v/librecad/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=libxcb-xtest0&color=c70036 "libxcb-xtest0")](https://packages.debian.org/bookworm/libxcb-xtest0)
+
+```bash
+apt install libxcb-xtest0
+```
+
+
+
 #### `lshw` ![lshw](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+
 [![lshw](https://img.shields.io/debian/v/lshw/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=lshw&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/lshw)
+
 ```bash
 apt install lshw
 ```
+#### `nautilus-admin` 
+
+[![nautilus-admin](https://img.shields.io/debian/v/nautilus-admin/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=nautilus-admin&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/nautilus-admin)
+
+```bash
+apt install nautilus-admin
+```
+
 #### `neofetch` ![neofetch](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+
 [![neofetch](https://img.shields.io/debian/v/neofetch/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=neofetch&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/neofetch)
 ```bash
 apt install neofetch
@@ -624,12 +658,7 @@ dpkg-reconfigure gdm3
 - https://extensions.gnome.org/extension/4269/alphabetical-app-grid/
 
 ```bash
-apt install nautilus-admin
-
 libxcb-xtest0
-
-cockpit
-
 ```
 - https://cockpit-project.org/running.html#debian
 - Zoom
