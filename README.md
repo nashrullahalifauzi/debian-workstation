@@ -362,7 +362,7 @@ apt install photocollage
 [![photocollage](https://img.shields.io/debian/v/php/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=php&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/php)
 ```bash
 apt install php
-
+```
 #### `poppler-utils` ![poppler-utils](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![poppler-utils](https://img.shields.io/debian/v/poppler-utils/bookworm?style=for-the-badge&logo=debian&logoColor=c70036&label=poppler-utils&color=c70036 "vector-based drawing program")](https://packages.debian.org/bookworm/poppler-utils)
 ```bash
