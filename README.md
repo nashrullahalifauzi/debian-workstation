@@ -2,12 +2,39 @@
 
 My personal computer desktop and/or laptop designed for technical or scientific applications.
 
+Visit `https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/`. Download [the image](https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/debian-12.7.0-amd64-DVD-1.iso.torrent).
+
+```bash
+root@syenasweta:/home/naf/Downloads/debian# ls
+debian-12.7.0-amd64-DVD-1.iso  SHA256SUMS	SHA256SUMS.sign  SHA512SUMS  SHA512SUMS.sign
+```
+
+## Verify the Image
+
+```bash
+root@syenasweta:/home/naf/Downloads/debian# gpg --keyserver keyring.debian.org --recv-keys DA87E80D6294BE9B
+root@syenasweta:/home/naf/Downloads/debian# gpg --list-keys | less
+root@syenasweta:/home/naf/Downloads/debian# gpg --list-keys DA87E80D6294BE9B
+root@syenasweta:/home/naf/Downloads/debian# gpg --verify SHA512SUMS.sign SHA512SUMS
+root@syenasweta:/home/naf/Downloads/debian# sha512sum --check --ignore-missing SHA512SUMS
+```
+
+
+
+## Write a USB/CD/DVD/BD Image to a USB Flash Drive
+
+```bash
+root@syenasweta:/home/naf/Downloads/debian# dd if=debian-12.7.0-amd64-DVD-1.iso of=/dev/sdb bs=1M status=progress oflag=sync
+```
+
+
+
 > [!WARNING]
 > This setup under construction!
 
 ## Debian Software Repositories
 
-Add to `/etc/apt/sources.list`.
+As `root`, add to `/etc/apt/sources.list`.
 
 ```bash                      
 # deb cdrom:[Debian GNU/Linux 12.6.0 _Bookworm_ - Official amd64 DVD Binary-1 with firmware 20240629-10:19]/ bo>
@@ -296,8 +323,6 @@ apt install librecad
 ```bash
 apt install libxcb-xtest0
 ```
-
-
 
 #### `lshw` ![lshw](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 
@@ -657,9 +682,6 @@ dpkg-reconfigure gdm3
 
 - https://extensions.gnome.org/extension/4269/alphabetical-app-grid/
 
-```bash
-libxcb-xtest0
-```
 - https://cockpit-project.org/running.html#debian
 - Zoom
 - Bibtex
