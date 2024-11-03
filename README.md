@@ -5,18 +5,18 @@ My personal computer desktop and/or laptop designed for technical or scientific 
 Visit `https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/`. Download [the image](https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/debian-12.7.0-amd64-DVD-1.iso.torrent).
 
 ```bash
-root@syenasweta:/home/naf/Downloads/debian# ls
+naf@syenasweta:~/home/naf/Downloads/debian# ls
 debian-12.7.0-amd64-DVD-1.iso  SHA256SUMS	SHA256SUMS.sign  SHA512SUMS  SHA512SUMS.sign
 ```
 
 ## Verify the Image
 
 ```bash
-root@syenasweta:/home/naf/Downloads/debian# gpg --keyserver keyring.debian.org --recv-keys DA87E80D6294BE9B
-root@syenasweta:/home/naf/Downloads/debian# gpg --list-keys | less
-root@syenasweta:/home/naf/Downloads/debian# gpg --list-keys DA87E80D6294BE9B
-root@syenasweta:/home/naf/Downloads/debian# gpg --verify SHA512SUMS.sign SHA512SUMS
-root@syenasweta:/home/naf/Downloads/debian# sha512sum --check --ignore-missing SHA512SUMS
+naf@syenasweta:~/Downloads/debian# gpg --keyserver keyring.debian.org --recv-keys DA87E80D6294BE9B
+naf@syenasweta:~/Downloads/debian# gpg --list-keys | less
+naf@syenasweta:~/Downloads/debian# gpg --list-keys DA87E80D6294BE9B
+naf@syenasweta:~/Downloads/debian# gpg --verify SHA512SUMS.sign SHA512SUMS
+naf@syenasweta:~/Downloads/debian# sha512sum --check --ignore-missing SHA512SUMS
 ```
 
 
@@ -24,7 +24,8 @@ root@syenasweta:/home/naf/Downloads/debian# sha512sum --check --ignore-missing S
 ## Write a USB/CD/DVD/BD Image to a USB Flash Drive
 
 ```bash
-root@syenasweta:/home/naf/Downloads/debian# dd if=debian-12.7.0-amd64-DVD-1.iso of=/dev/sdb bs=1M status=progress oflag=sync
+root@syenasweta:~# lsblk
+root@syenasweta:~# dd if=/home/naf/Downloads/debian/debian-12.7.0-amd64-DVD-1.iso of=/dev/sdc bs=1M status=progress oflag=sync
 ```
 
 
