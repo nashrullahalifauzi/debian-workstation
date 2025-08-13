@@ -2,6 +2,8 @@
 
 # Debian Workstation
 
+Author: Nashrullah Ali Fauzi
+
 My personal computer desktop and/or laptop designed for technical or scientific applications.
 
 Visit `https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/`. Download [the image](https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/debian-12.7.0-amd64-DVD-1.iso.torrent).
