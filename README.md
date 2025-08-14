@@ -6,33 +6,29 @@ Author: Nashrullah Ali Fauzi
 
 My personal computer desktop and/or laptop designed for technical or scientific applications.
 
-Visit `https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/`. Download [the image](https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/debian-12.7.0-amd64-DVD-1.iso.torrent).
+Visit `https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/`. Download [the image](https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/debian-13.0.0-amd64-DVD-1.iso.torrent).
 
 ```bash
-naf@syenasweta:~/home/naf/Downloads/debian# ls
-debian-12.7.0-amd64-DVD-1.iso  SHA256SUMS	SHA256SUMS.sign  SHA512SUMS  SHA512SUMS.sign
+naf@syenasweta:~/home/naf/Downloads/# ls
+debian-13.0.0-amd64-DVD-1.iso  SHA256SUMS	SHA256SUMS.sign  SHA512SUMS  SHA512SUMS.sign
 ```
 
 ## Verify the Image
 
 ```bash
-naf@syenasweta:~/Downloads/debian# gpg --keyserver keyring.debian.org --recv-keys DA87E80D6294BE9B
-naf@syenasweta:~/Downloads/debian# gpg --list-keys | less
-naf@syenasweta:~/Downloads/debian# gpg --list-keys DA87E80D6294BE9B
-naf@syenasweta:~/Downloads/debian# gpg --verify SHA512SUMS.sign SHA512SUMS
-naf@syenasweta:~/Downloads/debian# sha512sum --check --ignore-missing SHA512SUMS
+naf@syenasweta:~/Downloads/# gpg --keyserver keyring.debian.org --recv-keys DA87E80D6294BE9B
+naf@syenasweta:~/Downloads/# gpg --list-keys | less
+naf@syenasweta:~/Downloads/# gpg --list-keys DA87E80D6294BE9B
+naf@syenasweta:~/Downloads/# gpg --verify SHA512SUMS.sign SHA512SUMS
+naf@syenasweta:~/Downloads/# sha512sum --check --ignore-missing SHA512SUMS
 ```
-
-
 
 ## Write a USB/CD/DVD/BD Image to a USB Flash Drive
 
 ```bash
 root@syenasweta:~# lsblk
-root@syenasweta:~# dd if=/home/naf/Downloads/debian/debian-12.7.0-amd64-DVD-1.iso of=/dev/sdc bs=1M status=progress oflag=sync
+root@syenasweta:~# dd if=/home/naf/Downloads/debian/debian-13.0.0-amd64-DVD-1.iso of=/dev/sdc bs=1M status=progress oflag=sync
 ```
-
-
 
 > [!WARNING]
 > This setup under construction!
@@ -70,6 +66,8 @@ deb-src http://deb.debian.org/debian trixie-backports main non-free-firmware con
 ```
 
 ### Debian Testing
+
+Read the document in the link: [https://wiki.debian.org/DebianTesting](https://wiki.debian.org/DebianTesting).
 
 ```bash
 #deb cdrom:[Debian GNU/Linux 13.0.0 _Trixie_ - Official amd64 NETINST with firmware 20250809-11:20]/ trixie contrib main non-free-firmware
@@ -736,9 +734,12 @@ dpkg-reconfigure gdm3
 
 ## Flathub
 
+I am not using Flatpak yet.
+
 - https://flathub.org/apps/org.kde.kdenlive
 - https://flathub.org/apps/com.obsproject.Studio
 - https://flathub.org/apps/dev.storyapps.starc
 
 ## Credits
 
+Coming soon.
