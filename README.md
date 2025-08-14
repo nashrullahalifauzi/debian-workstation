@@ -1,8 +1,10 @@
+---
+title: Debian Workstation
+author: Nashrullah Ali Fauzi
+---
 ![Debian Workstation](wall.png)
 
 # Debian Workstation
-
-Author: Nashrullah Ali Fauzi
 
 My personal computer desktop and/or laptop designed for technical or scientific applications.
 
@@ -473,6 +475,12 @@ apt install poppler-utils
 ```bash
 apt install printer-driver-all
 ```
+#### `qdiskinfo`  ![qdiskinfo](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![qdiskinfo](https://img.shields.io/debian/v/qdiskinfo/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=qdiskinfo&color=c70036 "qdiskinfo")](https://packages.debian.org/trixie/qdiskinfo)
+```bash
+apt install qdiskinfo
+```
+
 #### `rar` ![rar](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![rar](https://img.shields.io/debian/v/rar/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=rar&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/rar)
 ```bash
