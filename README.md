@@ -97,6 +97,39 @@ deb-src http://security.debian.org/debian-security testing-security main non-fre
 # deb-src http://deb.debian.org/debian trixie-backports main non-free-firmware contrib non-free
 
 ```
+
+### Testing-Unstable Mix
+
+```bash
+#deb cdrom:[Debian GNU/Linux 13.0.0 _Trixie_ - Official amd64 NETINST with firmware 20250809-11:20]/ trixie contrib main non-free-firmware
+
+deb http://deb.debian.org/debian/ testing main non-free-firmware contrib non-free
+deb-src http://deb.debian.org/debian/ testing main non-free-firmware contrib non-free
+
+deb http://security.debian.org/debian-security testing-security main non-free-firmware contrib non-free
+deb-src http://security.debian.org/debian-security testing-security main non-free-firmware contrib non-free
+
+# trixie-updates, to get updates before a point release is made;
+# see https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_updates_and_backports
+# deb http://deb.debian.org/debian/ trixie-updates main non-free-firmware contrib non-free
+# deb-src http://deb.debian.org/debian/ trixie-updates main non-free-firmware contrib non-free
+
+# This system was installed using removable media other than
+# CD/DVD/BD (e.g. USB stick, SD card, ISO image file).
+# The matching "deb cdrom" entries were disabled at the end
+# of the installation process.
+# For information about how to configure apt package sources,
+# see the sources.list(5) manual.
+
+# debian-backports
+# deb http://deb.debian.org/debian trixie-backports main non-free-firmware contrib non-free
+# deb-src http://deb.debian.org/debian trixie-backports main non-free-firmware contrib non-free
+
+# testing-unstable mix
+deb http://deb.debian.org/debian/ unstable main non-free-firmware contrib non-free
+deb-src http://deb.debian.org/debian/ unstable main non-free-firmware contrib non-free
+```
+
 ### List of Debian Sofware
 
 #### `apache2` ![apache2](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
