@@ -652,11 +652,7 @@ ln -s /opt/zotero/zotero.desktop /home/naf/.local/share/applications/zotero.desk
 
 ##### `zotero-better-bibtex`
 
-Visit [https://github.com/retorquere/zotero-better-bibtex/releases/latest](https://github.com/retorquere/zotero-better-bibtex/releases/latest) and download:
-
-```bash
-wget https://github.com/retorquere/zotero-better-bibtex/releases/download/v6.7.214/zotero-better-bibtex-6.7.214.xpi
-```
+Visit [https://github.com/retorquere/zotero-better-bibtex/releases/latest](https://github.com/retorquere/zotero-better-bibtex/releases/latest) and download `.xpi`file.
 
 1. In the main menu go to Tools > Add-ons
 2. Select ‘Extensions’
