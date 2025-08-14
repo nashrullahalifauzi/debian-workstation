@@ -635,9 +635,9 @@ Visit [https://www.zotero.org/download/](https://www.zotero.org/download/) and d
 
 ```bash
 cd /opt
-wget https://download.zotero.org/client/release/7.0.8/Zotero-7.0.8_linux-x86_64.tar.bz2
-tar -xjvf Zotero-6.0.35_linux-x86_64.tar.bz2
-rm -rf Zotero-6.0.35_linux-x86_64.tar.bz2
+wget https://download.zotero.org/client/release/7.0.22/Zotero-7.0.22_linux-x86_64.tar.bz2
+tar -xjvf Zotero-7.0.22_linux-x86_64.tar.bz2
+rm -rf Zotero-7.0.22_linux-x86_64.tar.bz2
 mkdir zotero
 cd Zotero_linux-x86_64
 mv * /opt/zotero/
@@ -646,7 +646,8 @@ rm -rf Zotero_linux-x86_64
 cd zotero
 chmod +x set_launcher_icon
 ./set_launcher_icon # or bash set_launcher_icon
-ln -s zotero.desktop /home/naf/.local/share/applications/zotero.desktop
+cd /
+ln -s /opt/zotero/zotero.desktop /home/naf/.local/share/applications/zotero.desktop
 ```
 
 ##### `zotero-better-bibtex`
