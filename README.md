@@ -329,14 +329,7 @@ apt install kdenlive
 #### `kicad` ![kicad](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![kicad](https://img.shields.io/debian/v/kicad/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=kicad&color=c70036 "Electronic schematic and PCB design software.")](https://packages.debian.org/trixie/kicad)
 ```bash
-apt install kicad
-apt install kicad-footprints
-apt install kicad-libraries
-apt install kicad-packages3d
-apt install kicad-symbols
-apt install kicad-templates
-apt install kicad-doc-en
-apt install kicad-demos
+apt install kicad kicad-footprints kicad-libraries kicad-packages3d kicad-symbols kicad-templates install kicad-doc-en kicad-demos
 ```
 #### `kraft` ![kraft](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![kraft](https://img.shields.io/debian/v/kraft/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=kraft&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/kraft)
