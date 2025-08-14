@@ -636,10 +636,9 @@ cd Zotero_linux-x86_64
 mv * /opt/zotero/
 cd /opt
 rm -rf Zotero_linux-x86_64
-cd zotero
-chmod +x set_launcher_icon
-./set_launcher_icon # or bash set_launcher_icon
 cd /
+chmod +x /opt/zotero/zotero.desktop/set_launcher_icon
+./opt/zotero/zotero.desktop/set_launcher_icon # or bash /opt/zotero/zotero.desktop/set_launcher_icon
 ln -s /opt/zotero/zotero.desktop /home/naf/.local/share/applications/zotero.desktop
 ```
 
