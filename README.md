@@ -654,6 +654,8 @@ ln -s /opt/zotero/zotero.desktop /home/naf/.local/share/applications/zotero.desk
 
 Visit [https://github.com/retorquere/zotero-better-bibtex/releases/latest](https://github.com/retorquere/zotero-better-bibtex/releases/latest) and download `.xpi`file.
 
+Run Zotero.
+
 1. In the main menu go to Tools > Add-ons
 2. Select ‘Extensions’
 3. Click on the gear in the top-right corner and choose ‘Install Add-on From File…’
