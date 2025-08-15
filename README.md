@@ -130,6 +130,40 @@ deb http://deb.debian.org/debian/ unstable main non-free-firmware contrib non-fr
 deb-src http://deb.debian.org/debian/ unstable main non-free-firmware contrib non-free
 ```
 
+### Testing-Unstable-Experimental Mix User
+
+```bash
+# Testing-Unstable-Experimental Mix User
+# Read the docs:
+# https://wiki.debian.org/DebianStable
+# https://wiki.debian.org/DebianTesting
+# https://wiki.debian.org/DebianUnstable
+# https://wiki.debian.org/DebianExperimental
+
+# testing
+deb http://deb.debian.org/debian/ testing main non-free-firmware contrib non-free
+deb-src http://deb.debian.org/debian/ testing main non-free-firmware contrib non-free
+
+deb http://security.debian.org/debian-security testing-security main non-free-firmware contrib non-free
+deb-src http://security.debian.org/debian-security testing-security main non-free-firmware contrib non-free
+
+# testing-updates
+deb http://deb.debian.org/debian/ testing-updates main non-free-firmware contrib non-free
+deb-src http://deb.debian.org/debian/ testing-updates main non-free-firmware contrib non-free
+
+# backports
+# deb http://deb.debian.org/debian testing-backports main non-free-firmware contrib non-free
+# deb-src http://deb.debian.org/debian testing-backports main non-free-firmware contrib non-free
+
+# unstable
+deb http://deb.debian.org/debian/ unstable main non-free-firmware contrib non-free
+deb-src http://deb.debian.org/debian/ unstable main non-free-firmware contrib non-free
+
+# experimental
+deb https://deb.debian.org/debian/ experimental main non-free-firmware contrib non-free
+deb-src http://deb.debian.org/debian/ experimental main non-free-firmware contrib non-free
+```
+
 ### List of Debian Sofware
 
 #### `apache2` ![apache2](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
@@ -416,10 +450,32 @@ apt install neofetch
 ```
 #### `neovim` ![neovim](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![neovim](https://img.shields.io/debian/v/neovim/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=neovim&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/neovim)
+
 ```bash
 apt install neovim
 ```
-#### `nvidia-tesla-470-driver` ![nvidia-driver](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+
+#### `nvidia`
+
+##### `nvidia-legacy-390xx-driver` ![nvidia-legacy-390xx-driver](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+
+[![nvidia-tesla-470-driver](https://img.shields.io/debian/v/nvidia-legacy-390xx-driver/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=nvidia-legacy-390xx-driver&color=c70036 "Graphics")](https://packages.debian.org/sid/nvidia-legacy-390xx-driver)
+
+For `Thinkpad W520`.
+
+```bash
+apt install nvidia-legacy-390xx-driver
+```
+
+##### `nvidia-tesla-470-driver` ![nvidia-driver](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+
+[![nvidia-tesla-470-driver](https://img.shields.io/debian/v/nvidia-tesla-470-driver/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=nvidia-tesla-470-driver&color=c70036 "Graphics")](https://packages.debian.org/sid/nvidia-tesla-470-driver)
+
+For `Acer E5-473G`.
+
+```bash
+apt install nvidia-tesla-470-driver
+```
 
 Read the docs:
 
@@ -427,8 +483,6 @@ Read the docs:
 2. [https://wiki.debian.org/NVIDIA%20Optimus#Using_NVIDIA_GPU_as_the_primary_GPU](https://wiki.debian.org/NVIDIA%20Optimus#Using_NVIDIA_GPU_as_the_primary_GPU)
 3. [https://www.nvidia.com/en-us/geforce/gaming-laptops/geforce-920m/](https://www.nvidia.com/en-us/geforce/gaming-laptops/geforce-920m/)
 4. [https://wiki.archlinux.org/title/NVIDIA_Optimus](https://wiki.archlinux.org/title/NVIDIA_Optimus)
-
-[![nvidia-tesla-470-driver](https://img.shields.io/debian/v/nvidia-tesla-470-driver/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=nvidia-tesla-470-driver&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/nvidia-tesla-470-driver)
 
 ```bash
 apt install nvidia-tesla-470-driver
