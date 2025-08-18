@@ -613,6 +613,12 @@ apt install thunderbird
 ```bash
 apt install ttf-mscorefonts-installer
 ```
+#### `tree` ![thunderbird](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![thunderbird](https://img.shields.io/debian/v/tree/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=tree&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/tree)
+```bash
+apt install tree
+```
+
 #### `ufw` ![ufw](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![ufw](https://img.shields.io/debian/v/ufw/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=ufw&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/ufw)
 ```bash
