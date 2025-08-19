@@ -1,10 +1,6 @@
----
-title: Debian Workstation
-author: Nashrullah Ali Fauzi
----
-![Debian Workstation](wall.png)
+![Debian Workstation](assets/window.png)
 
-# Debian Workstation
+# Debian Workstation[^1]
 
 My personal computer desktop and/or laptop designed for technical or scientific applications.
 
@@ -34,6 +30,10 @@ root@syenasweta:~# dd if=/home/naf/Downloads/debian/debian-13.0.0-amd64-DVD-1.is
 
 > [!WARNING]
 > This setup under construction!
+
+![Nvidia Quadro 1000M](assets/nvidia.png)
+
+![CPU-X](assets/cpu-x.png)
 
 ## Debian Software Repositories
 
@@ -832,6 +832,4 @@ I am not using Flatpak yet.
 - https://flathub.org/apps/com.obsproject.Studio
 - https://flathub.org/apps/dev.storyapps.starc
 
-## Credits
-
-Coming soon.
+[^1]: Authored by Nashrullah Ali Fauzi

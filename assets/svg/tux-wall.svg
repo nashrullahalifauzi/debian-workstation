@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1600"
+   height="900"
+   viewBox="0 0 423.33334 238.125"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="tux-wall.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1">Tux</title>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.3937051"
+     inkscape:cx="609.59332"
+     inkscape:cy="567.68378"
+     inkscape:window-width="1600"
+     inkscape:window-height="828"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g2" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2">
+      <rect
+         style="fill:#2c302f;fill-opacity:1;stroke-width:0.487573"
+         id="rect1"
+         width="423.33334"
+         height="238.125"
+         x="-3.4195964e-06"
+         y="9.3749998e-07" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-family:'Departure Mono';-inkscape-font-specification:'Departure Mono';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#666666;stroke-width:0.264583"
+         x="61.827156"
+         y="162.63231"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="stroke-width:0.264583" /></text>
+      <path
+         fill-rule="evenodd"
+         clip-rule="evenodd"
+         d="m 228.74402,122.76662 c 0.75532,1.3291 1.45013,2.6897 1.98858,4.1222 0.25177,0.67036 0.19893,1.32155 -0.27456,1.88518 -0.46416,0.55328 -1.06553,0.45898 -1.6733,0.29839 a 113.83149,113.83149 0 0 0 -1.1198,-0.28699 68.500397,68.500397 0 0 1 -1.88134,-0.49423 c -0.34813,-0.0932 -0.46521,-0.031 -0.54395,0.3243 -0.40407,1.84103 -1.14624,3.54717 -2.30386,5.03635 -2.94562,3.7918 -6.73741,5.62268 -11.26815,5.58621 -4.53197,0.0414 -8.32242,-1.79441 -11.26939,-5.58621 -1.15887,-1.48918 -1.89906,-3.19407 -2.30375,-5.03635 -0.0828,-0.35641 -0.19582,-0.42272 -0.54187,-0.3243 -0.62374,0.17614 -1.25338,0.3357 -1.88259,0.49423 -0.373,0.0932 -0.74599,0.18959 -1.11981,0.28699 -0.60818,0.16059 -1.20798,0.25489 -1.6733,-0.29839 -0.47452,-0.5626 -0.52944,-1.21442 -0.27455,-1.88518 0.5398,-1.4325 1.23326,-2.79186 1.98732,-4.1222 a 41.448523,41.448523 0 0 1 6.8345,-8.97569 c 0.20825,-0.20722 0.34812,-0.44655 0.46312,-0.71387 0.62581,-1.46907 0.90763,-3.02259 1.19286,-4.57736 0.0518,-0.24348 0.0933,-0.488 0.1347,-0.73148 0.25385,-1.34546 0.53359,-2.68462 1.10966,-3.93674 1.493,-3.25593 4.08055,-4.834732 6.84081,-4.943108 h 0.16991 c 0.11086,-0.0022 0.22173,-0.0033 0.33259,0 0.10983,-0.0033 0.2207,-0.0022 0.33155,0 h 0.16992 c 2.76026,0.109834 5.34656,1.687178 6.84206,4.943108 0.57399,1.25336 0.85374,2.59252 1.10841,3.93799 l 0.13883,0.74495 c 0.28286,1.54969 0.56778,3.09947 1.19037,4.56348 0.11398,0.26524 0.25385,0.50561 0.46314,0.71284 a 41.493919,41.493919 0 0 1 6.83335,8.97567 z m -17.07492,12.08282 c 2.08565,-0.005 4.03505,-0.59161 5.77021,-1.85874 2.93432,-2.14369 4.18396,-5.11323 3.8926,-8.67813 -0.29839,-3.64425 -1.83596,-6.74372 -4.55332,-9.22403 a 8.8205778,8.8205778 0 0 0 -2.96592,-1.78301 c 0,0 -0.10564,-0.0414 -0.28701,-0.0932 0.16579,-0.0933 0.33363,-0.19272 0.50459,-0.28285 l 0.86617,-0.56158 c 0.57608,-0.37505 1.15255,-0.74804 1.73132,-1.11845 0.33465,-0.21343 0.54808,-0.49422 0.51804,-0.89934 -0.031,-0.40096 -0.26835,-0.66309 -0.63409,-0.82058 -3.19282,-1.37831 -6.39311,-1.5069 -9.60738,-0.0725 -0.38648,0.17095 -0.6859,0.40407 -0.71802,0.86202 -0.031,0.45691 0.23623,0.72527 0.59265,0.95218 0.60818,0.38439 1.21057,0.77706 1.81337,1.16892 l 0.74598,0.48385 c 0.16993,0.0933 0.33674,0.18132 0.50045,0.27974 -0.19791,0.0622 -0.31499,0.10465 -0.31499,0.10465 a 8.8205778,8.8205778 0 0 0 -2.96592,1.78302 c -2.71736,2.48041 -4.2545,5.57864 -4.55207,9.22413 -0.29218,3.56344 0.95839,6.53434 3.89136,8.67802 1.73515,1.26735 3.68456,1.85243 5.77156,1.85874 z"
+         fill="#041027"
+         id="path2"
+         style="fill:#74a69a;fill-opacity:1;stroke:none;stroke-width:1.26106;stroke-miterlimit:4;stroke-dasharray:none" />
+    </g>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Tux</dc:title>
+        <dc:date>15 Agustus 2015</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Nashrullah Ali Fauzi</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Syenasweta</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
