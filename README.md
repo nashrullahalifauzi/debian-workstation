@@ -1,4 +1,4 @@
-![Debian Workstation](assets/png/window.png)
+![Debian Workstation](assets/png/windows.png)
 
 # Debian Workstation[^1]
 
@@ -31,9 +31,9 @@ root@syenasweta:~# dd if=/home/naf/Downloads/debian/debian-13.0.0-amd64-DVD-1.is
 > [!WARNING]
 > This setup under construction!
 
-![Nvidia Quadro 1000M](assets/png/nvidia.png)
+![Nvidia Quadro 1000M](assets/png/ss-nvidia.png)
 
-![CPU-X](assets/png/cpu-x.png)
+![CPU-X](assets/png/inkscape.png)
 
 ## Debian Software Repositories
 
