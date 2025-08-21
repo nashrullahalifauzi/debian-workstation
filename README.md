@@ -39,6 +39,48 @@ root@syenasweta:~# dd if=/home/naf/Downloads/debian/debian-13.0.0-amd64-DVD-1.is
 
 ## Debian Software Repositories
 
+As `root`, add to `/etc/apt/sources.list.d/debian.sources`.
+
+```bash
+# Modernized from /etc/apt/sources.list
+Types: deb deb-src
+URIs: http://deb.debian.org/debian/
+Suites: testing
+Components: main non-free-firmware contrib non-free
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# Modernized from /etc/apt/sources.list
+Types: deb deb-src
+URIs: http://security.debian.org/debian-security/
+Suites: testing-security
+Components: main non-free-firmware contrib non-free
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# Modernized from /etc/apt/sources.list
+Types: deb deb-src
+URIs: http://deb.debian.org/debian/
+Suites: testing-updates
+Components: main non-free-firmware contrib non-free
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# Modernized from /etc/apt/sources.list
+Types: deb deb-src
+URIs: http://deb.debian.org/debian/
+Suites: unstable
+Components: main non-free-firmware contrib non-free
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# Modernized from /etc/apt/sources.list
+Types: deb deb-src
+URIs: https://deb.debian.org/debian/
+Suites: experimental
+Components: main non-free-firmware contrib non-free
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+```
+
+<details>
+<summary>Old Source!</summary>
+
 As `root`, add to `/etc/apt/sources.list`.
 
 ### Debian Stable
@@ -166,7 +208,16 @@ deb https://deb.debian.org/debian/ experimental main non-free-firmware contrib n
 deb-src http://deb.debian.org/debian/ experimental main non-free-firmware contrib non-free
 ```
 
+</details>
+
 ### List of Debian Sofware
+
+#### `alacritty` ![alacritty](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+[![alacritty](https://img.shields.io/debian/v/alacritty/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=apache2&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/alacritty)
+
+```bash
+apt install alacritty
+```
 
 #### `apache2` ![apache2](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
 [![apache2](https://img.shields.io/debian/v/apache2/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=apache2&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/apache2)
