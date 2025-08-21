@@ -581,6 +581,13 @@ apt install obs-studio
 ```bash
 apt install openscad
 ```
+#### `pandoc`
+[![pandoc](https://img.shields.io/debian/v/pandoc/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=pandoc&color=c70036 "pandoc")](https://packages.debian.org/trixie/pandoc)
+
+```bash
+apt install pandoc pandoc-citeproc-preamble pandoc-data pandoc-filter-diagram pandoc-plantuml-filter pampi
+```
+
 #### `papirus-icon-theme`
 [![papirus-icon-theme](https://img.shields.io/debian/v/papirus-icon-theme/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=papirus-icon-theme&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/papirus-icon-theme)
 ```bash
