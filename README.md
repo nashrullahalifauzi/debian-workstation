@@ -1,6 +1,9 @@
-![Debian Workstation](assets/png/de.png)
+---
+title: Debian Workstation
+author: Nashrullah Ali Fauzi
+---
 
-# Debian Workstation[^1]
+![Debian Workstation](assets/png/de.png)
 
 Personal computer desktop and/or laptop designed for technical or scientific applications. The main desktop environment is Plasma, but we occasionally use GNOME, and sometimes we use a window manager like Openbox, Sway, Hyperland.
 
@@ -909,6 +912,10 @@ And:
 dpkg-reconfigure gdm3
 ```
 
+### Configure LAMP
+
+- https://wiki.debian.org/LaMp
+
 ## Add on
 
 - https://extensions.gnome.org/extension/4269/alphabetical-app-grid/
@@ -916,10 +923,6 @@ dpkg-reconfigure gdm3
 - https://cockpit-project.org/running.html#debian
 - Zoom
 - Bibtex
-
-### Configure LAMP
-
-- https://wiki.debian.org/LaMp
 
 
 ## Flathub
@@ -929,5 +932,3 @@ I am not using Flatpak yet.
 - https://flathub.org/apps/org.kde.kdenlive
 - https://flathub.org/apps/com.obsproject.Studio
 - https://flathub.org/apps/dev.storyapps.starc
-
-[^1]: Authored by Nashrullah Ali Fauzi
