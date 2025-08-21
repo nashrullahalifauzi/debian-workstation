@@ -2,7 +2,7 @@
 
 # Debian Workstation[^1]
 
-My personal computer desktop and/or laptop designed for technical or scientific applications.
+Personal computer desktop and/or laptop designed for technical or scientific applications. The main desktop environment is Plasma, but we occasionally use GNOME, and sometimes we use a window manager like Openbox, Sway, Hyperland.
 
 ![Nvidia Quadro 1000M](assets/png/terminal.png)
 
