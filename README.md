@@ -1,8 +1,10 @@
-![Debian Workstation](assets/png/windows.png)
+![Debian Workstation](assets/png/de.png)
 
 # Debian Workstation[^1]
 
 My personal computer desktop and/or laptop designed for technical or scientific applications.
+
+![Nvidia Quadro 1000M](assets/png/terminal.png)
 
 Visit `https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/`. Download [the image](https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/debian-13.0.0-amd64-DVD-1.iso.torrent).
 
@@ -31,7 +33,7 @@ root@syenasweta:~# dd if=/home/naf/Downloads/debian/debian-13.0.0-amd64-DVD-1.is
 > [!WARNING]
 > This setup under construction!
 
-![Nvidia Quadro 1000M](assets/png/ss-nvidia.png)
+![Nvidia Quadro 1000M](assets/png/nvidia.png)
 
 ![CPU-X](assets/png/inkscape.png)
 
