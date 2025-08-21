@@ -3,7 +3,7 @@ title: Debian Workstation
 author: Nashrullah Ali Fauzi
 ---
 
-![Debian Workstation](assets/png/de.png)
+![Debian Workstation](assets/png/tux-plasma.png)
 
 Personal computer desktop and/or laptop designed for technical or scientific applications. The main desktop environment is Plasma, but we occasionally use GNOME, and sometimes we use a window manager like Openbox, Sway, Hyperland.
 
