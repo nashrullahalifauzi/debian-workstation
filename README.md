@@ -1,13 +1,19 @@
 ---
 title: Debian Workstation
 author: Nashrullah Ali Fauzi
+date: August 22, 2025
+abstract: "Create workstations more smartly. Build life more easily. Run very fast and steadily. The jobs will get done quickly. *And will provide for him from where he does not expect …* [^1]"
 ---
 
-![Debian Workstation](assets/png/tux-plasma.png)
+![Debian Workstation](assets/png/tux-plasma-wall.png)
+
+# Debian Workstation
 
 Personal computer desktop and/or laptop designed for technical or scientific applications. The main desktop environment is Plasma, but we occasionally use GNOME, and sometimes we use a window manager like Openbox, Sway, Hyperland.
 
-![Nvidia Quadro 1000M](assets/png/terminal.png)
+## Debian Installation
+
+### Download
 
 Visit `https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/`. Download [the image](https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/debian-13.0.0-amd64-DVD-1.iso.torrent).
 
@@ -16,7 +22,7 @@ naf@syenasweta:~/home/naf/Downloads/# ls
 debian-13.0.0-amd64-DVD-1.iso  SHA256SUMS	SHA256SUMS.sign  SHA512SUMS  SHA512SUMS.sign
 ```
 
-## Verify the Image
+### Verify the Image
 
 ```bash
 naf@syenasweta:~/Downloads/# gpg --keyserver keyring.debian.org --recv-keys DA87E80D6294BE9B
@@ -26,18 +32,18 @@ naf@syenasweta:~/Downloads/# gpg --verify SHA512SUMS.sign SHA512SUMS
 naf@syenasweta:~/Downloads/# sha512sum --check --ignore-missing SHA512SUMS
 ```
 
-## Write a USB/CD/DVD/BD Image to a USB Flash Drive
+### Write a USB/CD/DVD/BD Image to a USB Flash Drive
 
 ```bash
 root@syenasweta:~# lsblk
 root@syenasweta:~# dd if=/home/naf/Downloads/debian/debian-13.0.0-amd64-DVD-1.iso of=/dev/sdc bs=1M status=progress oflag=sync
 ```
 
-![Nvidia Quadro 1000M](assets/png/nvidia.png)
-
-![CPU-X](assets/png/inkscape.png)
-
 ## Debian Software Repositories
+
+![Terminal](assets/png/terminal.png)
+
+### Debian Sources Currently in Use
 
 As `root`, add to `/etc/apt/sources.list.d/debian.sources`.
 
@@ -78,12 +84,11 @@ Components: main non-free-firmware contrib non-free
 Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 ```
 
-<details>
-<summary>Old Source!</summary>
+### Backed Up Debian Sources
 
 As `root`, add to `/etc/apt/sources.list`.
 
-### Debian Stable
+#### Debian Stable
 
 ```bash
 #deb cdrom:[Debian GNU/Linux 13.0.0 _Trixie_ - Official amd64 NETINST with firmware 20250809-11:20]/ trixie contrib main non-free-firmware
@@ -111,7 +116,7 @@ deb http://deb.debian.org/debian trixie-backports main non-free-firmware contrib
 deb-src http://deb.debian.org/debian trixie-backports main non-free-firmware contrib non-free
 ```
 
-### Debian Testing
+#### Debian Testing
 
 Read the document in the link: [https://wiki.debian.org/DebianTesting](https://wiki.debian.org/DebianTesting).
 
@@ -142,7 +147,7 @@ deb-src http://security.debian.org/debian-security testing-security main non-fre
 
 ```
 
-### Testing-Unstable Mix
+#### Testing-Unstable Mix
 
 ```bash
 #deb cdrom:[Debian GNU/Linux 13.0.0 _Trixie_ - Official amd64 NETINST with firmware 20250809-11:20]/ trixie contrib main non-free-firmware
@@ -174,7 +179,7 @@ deb http://deb.debian.org/debian/ unstable main non-free-firmware contrib non-fr
 deb-src http://deb.debian.org/debian/ unstable main non-free-firmware contrib non-free
 ```
 
-### Testing-Unstable-Experimental Mix User
+#### Testing-Unstable-Experimental Mix User
 
 ```bash
 # Testing-Unstable-Experimental Mix User
@@ -208,14 +213,11 @@ deb https://deb.debian.org/debian/ experimental main non-free-firmware contrib n
 deb-src http://deb.debian.org/debian/ experimental main non-free-firmware contrib non-free
 ```
 
-</details>
+### Debian Software Currently in Use
 
-### List of Debian Sofware
+![Nvidia Quadro 1000M](assets/png/nvidia.png)
 
-
-
-
-#### `alacritty`
+##### `alacritty`
 
 [![alacritty](https://img.shields.io/debian/v/alacritty/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=alacritty&color=c70036 "alacritty")](https://packages.debian.org/trixie/alacritty)
 
@@ -223,69 +225,69 @@ deb-src http://deb.debian.org/debian/ experimental main non-free-firmware contri
 apt install alacritty
 ```
 
-#### `apache2`
+##### `apache2`
 [![apache2](https://img.shields.io/debian/v/apache2/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=apache2&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/apache2)
 
 ```bash
 apt install apache2
 ```
 
-#### `apache2-doc`
+##### `apache2-doc`
 [![apache2](https://img.shields.io/debian/v/apache2-doc/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=apache2-doc&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/apache2-doc)
 
 ```bash
 apt install apache2-doc
 ```
 
-#### `apt-transport-https`
+##### `apt-transport-https`
 [![apt-transport-https](https://img.shields.io/debian/v/apt-transport-https/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=apt-transport-https&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/apt-transport-https)
 
 ```bash
 apt install apt-transport-https
 ```
 
-#### `atril`
+##### `atril`
 [![atril](https://img.shields.io/debian/v/atril/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=atril&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/atril)
 
 ```bash
 apt install atril
 ```
-#### `audacious`
+##### `audacious`
 [![audacious](https://img.shields.io/debian/v/audacious/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=audacious&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/audacious)
 
 ```bash
 apt install audacious
 ```
-#### `audacity`
+##### `audacity`
 [![audacity](https://img.shields.io/debian/v/audacity/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=audacity&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/audacity)
 
 ```bash
 apt install audacity
 ```
-#### `blender`
+##### `blender`
 [![blender](https://img.shields.io/debian/v/blender/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=blender&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/blender)
 
 ```bash
 apt install blender
 ```
-#### `btop`
+##### `btop`
 [![btop](https://img.shields.io/debian/v/btop/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=btop&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/btop)
 
 ```bash
 apt install btop
 ```
-#### `calibre`
+##### `calibre`
 [![calibre](https://img.shields.io/debian/v/calibre/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=calibre&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/calibre)
 ```bash
 apt install calibre
 ```
-#### `chromium`
+##### `chromium`
 [![chromium](https://img.shields.io/debian/v/chromium/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=chromium&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/chromium)
 
 ```bash
 apt install chromium
 ```
-#### `cocpit`
+##### `cocpit`
 
 [![cockpit](https://img.shields.io/debian/v/chromium/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=cockpit&color=c70036 "Web Console for Linux servers")](https://packages.debian.org/trixie-backports/cockpit)
 
@@ -293,58 +295,58 @@ apt install chromium
 apt install cockpit/trixie-backports
 ```
 
-#### `color-picker`
+##### `color-picker`
 
 [![color-picker](https://img.shields.io/debian/v/color-picker/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=color-picker&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/color-picker)
 ```bash
 apt install color-picker
 ```
 
-#### `cpu-x`
+##### `cpu-x`
 [![cpu-x](https://img.shields.io/debian/v/cpu-x/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=cpu-x&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/cpu-x)
 ```bash
 apt install cpu-x
 ```
 
-#### `curl`
+##### `curl`
 [![curl](https://img.shields.io/debian/v/curl/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=curl&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/curl)
 ```bash
 apt install curl
 ```
 
-#### `ebook-speaker`
+##### `ebook-speaker`
 [![ebook-speaker](https://img.shields.io/debian/v/ebook-speaker/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=ebook-speaker&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/ebook-speaker)
 
 ```bash
 apt install ebook-speaker
 ```
 
-#### `dconf-editor`
+##### `dconf-editor`
 [![dconf-editor](https://img.shields.io/debian/v/dconf-editor/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=ebook-speaker&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/dconf-editor)
 
 ```bash
 apt install dconf-editor
 ```
 
-#### `fastfetch`
+##### `fastfetch`
 
 [![fastfetch](https://img.shields.io/debian/v/fastfetch/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=fastfetch&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/fastfetch)
 ```bash
 apt install fastfetch
 ```
 
-#### `ffmpeg` 
+##### `ffmpeg` 
 [![ffmpeg](https://img.shields.io/debian/v/ffmpeg/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=ffmpeg&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/ffmpeg)
 ```bash
 apt install ffmpeg
 ```
-#### `filezilla`
+##### `filezilla`
 [![filezilla](https://img.shields.io/debian/v/filezilla/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=filezilla&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/filezilla)
 ```bash
 apt install filezilla
 ```
 
-#### `fonts-crosextra-caladea`
+##### `fonts-crosextra-caladea`
 
 [![fonts-crosextra-caladea](https://img.shields.io/debian/v/fonts-crosextra-caladea/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=fonts-crosextra-caladea&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/fonts-crosextra-caladea)
 
@@ -352,158 +354,158 @@ apt install filezilla
 apt install fonts-crosextra-caladea
 ```
 
-#### `fonts-inter`
+##### `fonts-inter`
 [![fonts-inter](https://img.shields.io/debian/v/fonts-inter/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=fonts-inter&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/fonts-inter)
 ```bash
 apt install fonts-inter
 ```
 
-#### `fonts-crosextra-carlito`
+##### `fonts-crosextra-carlito`
 
 [![fonts-crosextra-carlito](https://img.shields.io/debian/v/fonts-crosextra-carlito/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=fonts-crosextra-carlito&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/fonts-crosextra-carlito)
 ```bash
 apt install fonts-crosextra-carlito
 ```
-#### `fonts-jetbrains-mono`
+##### `fonts-jetbrains-mono`
 
 [![fonts-jetbrains-mono](https://img.shields.io/debian/v/fonts-jetbrains-mono/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=fonts-jetbrains-mono&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/fonts-jetbrains-mono)
 ```bash
 apt install fonts-jetbrains-mono
 ```
-#### `font-manager`
+##### `font-manager`
 [![font-manager](https://img.shields.io/debian/v/font-manager/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=font-manager&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/font-manager)
 ```bash
 apt install font-manager
 ```
-#### `font-viewer`
+##### `font-viewer`
 [![font-viewer](https://img.shields.io/debian/v/font-viewer/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=font-viewer&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/font-viewer)
 ```bash
 apt install font-viewer
 ```
-#### `freecad`
+##### `freecad`
 [![freecad](https://img.shields.io/debian/v/freecad/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=freecad&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/freecad)
 ```bash
 apt install freecad
 ```
-#### `freeplane`
+##### `freeplane`
 [![freeplane](https://img.shields.io/debian/v/freeplane/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=freeplane&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/freeplane)
 ```bash
 apt install freeplane
 ```
-#### `geany`
+##### `geany`
 [![geany](https://img.shields.io/debian/v/geany/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=geany&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/geany)
 ```bash
 apt install geany
 ```
-#### `gdebi`
+##### `gdebi`
 [![gdebi](https://img.shields.io/debian/v/gdebi/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=gdebi&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/gdebi)
 ```bash
 apt install gdebi
 ```
-#### `gimp`
+##### `gimp`
 [![gimp](https://img.shields.io/debian/v/gimp/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=gimp&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/gimp)
 ```bash
 apt install gimp
 ```
-#### `git`
+##### `git`
 [![git](https://img.shields.io/debian/v/git/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=git&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/git)
 ```bash
 apt install git
 ```
-#### `gnome-power-manager`
+##### `gnome-power-manager`
 [![gnome-power-manager](https://img.shields.io/debian/v/gnome-power-manager/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=gnome-power-manager&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/gnome-power-manager)
 ```bash
 apt install gnome-power-manager
 ```
-#### `gnucash`
+##### `gnucash`
 [![gnucash](https://img.shields.io/debian/v/gnucash/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=gnucash&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/gnucash)
 ```bash
 apt install gnucash
 ```
-#### `gparted`
+##### `gparted`
 [![gparted](https://img.shields.io/debian/v/gparted/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=gparted&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/gparted)
 ```bash
 apt install gparted
 ```
-#### `gscan2pdf`
+##### `gscan2pdf`
 [![gscan2pdf](https://img.shields.io/debian/v/gscan2pdf/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=gscan2pdf&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/gscan2pdf)
 ```bash
 apt install gscan2pdf
 ```
-#### `gsmartcontrol`
+##### `gsmartcontrol`
 [![gsmartcontrol](https://img.shields.io/debian/v/gsmartcontrol/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=gsmartcontrol&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/gsmartcontrol)
 ```bash
 apt install gsmartcontrol
 ```
-#### `gstreamer1.0-vaapi`
+##### `gstreamer1.0-vaapi`
 [![gstreamer1.0-vaapi](https://img.shields.io/debian/v/gstreamer1.0-vaapi/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=gstreamer1.0-vaapi&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/gstreamer1.0-vaapi)
 ```bash
 apt install gstreamer1.0-vaapi
 ```
-#### `gthumb`
+##### `gthumb`
 [![gthumb](https://img.shields.io/debian/v/gthumb/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=gthumb&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/gthumb)
 ```bash
 apt install gthumb
 ```
-#### `hardinfo`
+##### `hardinfo`
 [![hardinfo](https://img.shields.io/debian/v/hardinfo/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=hardinfo&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/hardinfo)
 ```bash
 apt install hardinfo
 ```
-#### `htop`
+##### `htop`
 [![htop](https://img.shields.io/debian/v/htop/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=htop&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/htop)
 ```bash
 apt install htop
 ```
-#### `inkscape`
+##### `inkscape`
 [![inkscape](https://img.shields.io/debian/v/inkscape/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=inkscape&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/inkscape)
 ```bash
 apt install inkscape
 ```
-#### `img2pdf` 
+##### `img2pdf` 
 [![img2pdf](https://img.shields.io/debian/v/img2pdf/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=img2pdf&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/img2pdf)
 
 ```bash
 apt install img2pdf
 ```
-#### `kdenlive`
+##### `kdenlive`
 [![kdenlive](https://img.shields.io/debian/v/kdenlive/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=kdenlive&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/kdenlive)
 ```bash
 apt install kdenlive
 ```
-#### `kde-config-plymouth`
+##### `kde-config-plymouth`
 [![photocollage](https://img.shields.io/debian/v/kde-config-plymouth/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=kde-config-plymouth&color=c70036 "kde-config-plymouth")](https://packages.debian.org/trixie/kde-config-plymouth)
 ```bash
 apt install kde-config-plymouth
 ```
 
-#### `kicad`
+##### `kicad`
 [![kicad](https://img.shields.io/debian/v/kicad/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=kicad&color=c70036 "Electronic schematic and PCB design software.")](https://packages.debian.org/trixie/kicad)
 ```bash
 apt install kicad kicad-footprints kicad-libraries kicad-packages3d kicad-symbols kicad-templates kicad-doc-en kicad-demos
 ```
-#### `kraft`
+##### `kraft`
 [![kraft](https://img.shields.io/debian/v/kraft/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=kraft&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/kraft)
 ```bash
 apt install kraft
 ```
-#### `krita`
+##### `krita`
 [![krita](https://img.shields.io/debian/v/krita/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=krita&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/krita)
 ```bash
 apt install krita
 ```
-#### `libavcodec-extra`
+##### `libavcodec-extra`
 [![libavcodec-extra](https://img.shields.io/debian/v/libavcodec-extra/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=libavcodec-extra&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/libavcodec-extra)
 ```bash
 apt install libavcodec-extra
 ```
-#### `librecad`
+##### `librecad`
 [![librecad](https://img.shields.io/debian/v/librecad/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=librecad&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/librecad)
 
 ```bash
 apt install librecad
 ```
-#### `libxcb-xtest0`
+##### `libxcb-xtest0`
 
 [![libxcb-xtest0](https://img.shields.io/debian/v/librecad/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=libxcb-xtest0&color=c70036 "libxcb-xtest0")](https://packages.debian.org/trixie/libxcb-xtest0)
 
@@ -511,14 +513,14 @@ apt install librecad
 apt install libxcb-xtest0
 ```
 
-#### `lshw`
+##### `lshw`
 
 [![lshw](https://img.shields.io/debian/v/lshw/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=lshw&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/lshw)
 
 ```bash
 apt install lshw
 ```
-#### `nautilus-admin` 
+##### `nautilus-admin` 
 
 [![nautilus-admin](https://img.shields.io/debian/v/nautilus-admin/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=nautilus-admin&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/nautilus-admin)
 
@@ -526,16 +528,16 @@ apt install lshw
 apt install nautilus-admin
 ```
 
-#### `neovim`
+##### `neovim`
 [![neovim](https://img.shields.io/debian/v/neovim/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=neovim&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/neovim)
 
 ```bash
 apt install neovim
 ```
 
-#### `nvidia`
+##### `nvidia`
 
-##### `nvidia-legacy-390xx-driver`
+###### `nvidia-legacy-390xx-driver`
 
 [![nvidia-tesla-470-driver](https://img.shields.io/debian/v/nvidia-legacy-390xx-driver/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=nvidia-legacy-390xx-driver&color=c70036 "Graphics")](https://packages.debian.org/sid/nvidia-legacy-390xx-driver)
 
@@ -545,7 +547,7 @@ For `Thinkpad W520`.
 apt install nvidia-legacy-390xx-driver
 ```
 
-##### `nvidia-tesla-470-driver`
+###### `nvidia-tesla-470-driver`
 
 [![nvidia-tesla-470-driver](https://img.shields.io/debian/v/nvidia-tesla-470-driver/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=nvidia-tesla-470-driver&color=c70036 "Graphics")](https://packages.debian.org/sid/nvidia-tesla-470-driver)
 
@@ -565,191 +567,191 @@ Read the docs:
 ```bash
 apt install nvidia-detect
 ```
-#### `ocrmypdf`
+##### `ocrmypdf`
 [![ocrmypdf](https://img.shields.io/debian/v/ocrmypdf/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=ocrmypdf&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/ocrmypdf)
 ```bash
 apt install ocrmypdf
 ```
-#### `obs-studio`
+##### `obs-studio`
 [![obsstudio](https://img.shields.io/debian/v/obs-studio/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=obs-studio&color=c70036 "screen-recording program")](https://packages.debian.org/trixie/obsstudio)
 
 ```bash
 apt install obs-studio
 ```
-#### `openscad`
+##### `openscad`
 [![openscad](https://img.shields.io/debian/v/openscad/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=openscad&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/openscad)
 ```bash
 apt install openscad
 ```
-#### `pandoc`
+##### `pandoc`
 [![pandoc](https://img.shields.io/debian/v/pandoc/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=pandoc&color=c70036 "pandoc")](https://packages.debian.org/trixie/pandoc)
 
 ```bash
 apt install pandoc pandoc-citeproc-preamble pandoc-data pandoc-filter-diagram pandoc-plantuml-filter pampi
 ```
 
-#### `papirus-icon-theme`
+##### `papirus-icon-theme`
 [![papirus-icon-theme](https://img.shields.io/debian/v/papirus-icon-theme/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=papirus-icon-theme&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/papirus-icon-theme)
 ```bash
 apt install papirus-icon-theme
 ```
-#### `partitionmanager`
+##### `partitionmanager`
 [![partitionmanager](https://img.shields.io/debian/v/partitionmanager/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=partitionmanager&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/partitionmanager)
 ```bash
 apt install partitionmanager
 ```
-#### `pdfarranger`
+##### `pdfarranger`
 [![pdfarranger](https://img.shields.io/debian/v/pdfarranger/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=pdfarranger&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/pdfarranger)
 ```bash
 apt install pdfarranger
 ```
-#### `pdfsam`
+##### `pdfsam`
 [![pdfsam](https://img.shields.io/debian/v/pdfsam/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=pdfsam&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/pdfsam)
 ```bash
 apt install pdfsam
 ```
-#### `pdftk`
+##### `pdftk`
 [![pdftk](https://img.shields.io/debian/v/inkscape/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=pdftk&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/pdftk)
 ```bash
 apt install pdftk
 ```
-#### `photocollage`
+##### `photocollage`
 [![photocollage](https://img.shields.io/debian/v/photocollage/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=photocollage&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/photocollage)
 ```bash
 apt install photocollage
 ```
 
-#### `php`
+##### `php`
 [![photocollage](https://img.shields.io/debian/v/php/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=php&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/php)
 ```bash
 apt install php
 ```
 
-#### `plymouth`
+##### `plymouth`
 [![photocollage](https://img.shields.io/debian/v/plymouth/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=plymouth&color=c70036 "plymouth")](https://packages.debian.org/trixie/plymouth)
 ```bash
 apt install plymouth
 ```
 
-#### `plymouth-themes`
+##### `plymouth-themes`
 [![photocollage](https://img.shields.io/debian/v/plymouth-themes/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=plymouth-themes&color=c70036 "plymouth-themes")](https://packages.debian.org/trixie/plymouth-themes)
 ```bash
 apt install plymouth-themes
 ```
 
-#### `plymouth-theme-breeze`
+##### `plymouth-theme-breeze`
 [![photocollage](https://img.shields.io/debian/v/plymouth-theme-breeze/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=plymouth-theme-breeze&color=c70036 "plymouth-theme-breeze")](https://packages.debian.org/trixie/plymouth-theme-breezep)
 ```bash
 apt install plymouth-theme-breeze
 ```
 
-#### `poppler-utils`
+##### `poppler-utils`
 [![poppler-utils](https://img.shields.io/debian/v/poppler-utils/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=poppler-utils&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/poppler-utils)
 ```bash
 apt install poppler-utils
 ```
-#### `printer-driver-all`
+##### `printer-driver-all`
 [![printer-driver-all](https://img.shields.io/debian/v/printer-driver-all/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=printer-driver-all&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/printer-driver-all)
 ```bash
 apt install printer-driver-all
 ```
-#### `qdiskinfo`
+##### `qdiskinfo`
 [![qdiskinfo](https://img.shields.io/debian/v/qdiskinfo/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=qdiskinfo&color=c70036 "qdiskinfo")](https://packages.debian.org/trixie/qdiskinfo)
 ```bash
 apt install qdiskinfo
 ```
 
-#### `qmk`
+##### `qmk`
 [![qmk](https://img.shields.io/debian/v/qmk/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=qmk&color=c70036 "qmk")](https://packages.debian.org/trixie/qmk)
 ```bash
 apt install qmk
 ```
 
-#### `rar`
+##### `rar`
 [![rar](https://img.shields.io/debian/v/rar/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=rar&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/rar)
 ```bash
 apt install rar
 ```
-#### `scribus`
+##### `scribus`
 [![scribus](https://img.shields.io/debian/v/scribus/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=scribus&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/scribus)
 ```bash
 apt install scribus
 ```
-#### `slic3r`
+##### `slic3r`
 [![slic3r](https://img.shields.io/debian/v/slic3r/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=slic3r&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/slic3r)
 ```bash
 apt install slic3r
 ```
-#### `sweethome3d`
+##### `sweethome3d`
 [![sweethome3d](https://img.shields.io/debian/v/sweethome3d/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=sweethome3d&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/sweethome3d)
 ```bash
 apt install sweethome3d
 ```
-#### `tesseract-ocr`
+##### `tesseract-ocr`
 [![tesseract-ocr](https://img.shields.io/debian/v/tesseract-ocr/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=tesseract-ocr&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/tesseract-ocr)
 ```bash
 apt install tesseract-ocr
 ```
-#### `terminator`
+##### `terminator`
 [![terminator](https://img.shields.io/debian/v/terminator/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=terminator&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/terminator)
 ```bash
 apt install terminator
 ```
 
-#### `texlive`
+##### `texlive`
 [![texlive](https://img.shields.io/debian/v/texlive/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=texlive&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/texlive)
 ```bash
 apt install texlive
 ```
 
-#### `thunar`
+##### `thunar`
 [![thunar](https://img.shields.io/debian/v/thunar/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=thunar&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/thunar)
 ```bash
 apt install thunar
 ```
-#### `thunderbird`
+##### `thunderbird`
 [![thunderbird](https://img.shields.io/debian/v/thunderbird/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=thunderbird&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/thunderbird)
 ```bash
 apt install thunderbird
 ```
-#### `ttf-mscorefonts-installer`
+##### `ttf-mscorefonts-installer`
 
 [![ttf-mscorefonts-installer](https://img.shields.io/debian/v/ttf-mscorefonts-installer/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=ttf-mscorefonts-installer&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/ttf-mscorefonts-installer)
 ```bash
 apt install ttf-mscorefonts-installer
 ```
-#### `tree`
+##### `tree`
 [![thunderbird](https://img.shields.io/debian/v/tree/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=tree&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/tree)
 ```bash
 apt install tree
 ```
 
-#### `ufw`
+##### `ufw`
 [![ufw](https://img.shields.io/debian/v/ufw/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=ufw&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/ufw)
 ```bash
 apt install ufw
 ```
-#### `unrar`
+##### `unrar`
 [![unrar](https://img.shields.io/debian/v/unrar/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=unrar&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/unrar)
 ```bash
 apt install unrar
 ```
-#### `usbview`
+##### `usbview`
 [![usbview](https://img.shields.io/debian/v/usbview/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=usbview&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/usbview)
 ```bash
 apt install usbview
 ```
-#### `vlc`
+##### `vlc`
 [![vlc](https://img.shields.io/debian/v/vlc/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=vlc&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/vlc)
 ```bash
 apt install vlc
 ```
-#### `wget`
+##### `wget`
 [![wget](https://img.shields.io/debian/v/wget/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=wget&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/wget)
 ```bash
 apt install wget
 ```
-#### `wifi-qr`
+##### `wifi-qr`
 [![wifi-qr](https://img.shields.io/debian/v/wifi-qr/trixie?style=for-the-badge&logo=debian&logoColor=c70036&label=wifi-qr&color=c70036 "vector-based drawing program")](https://packages.debian.org/trixie/wifi-qr)
 ```bash
 apt install wifi-qr
@@ -757,8 +759,14 @@ apt install wifi-qr
 
 ## Non-Debian Software Repositories
 
-#### `chrome`
-#### `gh` ![atril](https://img.shields.io/badge/github_cli-git?style=flat-square)
+##### `chrome`
+
+```bash
+chrome
+```
+
+##### `gh`
+
 ```bash
 wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
 && chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
@@ -767,9 +775,13 @@ wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | tee /e
 && apt install gh
 ```
 
-#### `odafileconverter`
+##### `odafileconverter`
 
-#### `pandoc`
+```bash
+odafileconverter
+```
+
+##### `pandoc`
 
 Download the latest release of Pandoc via `https://github.com/jgm/pandoc/releases/latest`.
 
@@ -779,7 +791,7 @@ wget https://github.com/jgm/pandoc/releases/download/3.3/pandoc-3.3-1-amd64.deb
 
 Install `pandoc-3.3-1-amd64.deb` via Gdebi.
 
-#### `qmk-firmware`
+##### `qmk-firmware`
 
 Visit `https://github.com/qmk/qmk_fpm`
 
@@ -790,9 +802,9 @@ apt update && upgrade
 apt install qmk
 ```
 > [!NOTES]
-> In Debian repositories there is also a `qmk` package
+> In Debian repositories there is also a `qmk` package.
 
-#### `signal` ![signal](https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square)
+##### `signal`
 
 ```bash
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
@@ -805,14 +817,14 @@ apt update
 apt install signal
 ```
 
-#### `typora`
+##### `typora`
 ```bash
 wget -qO - https://typora.io/linux/public-key.asc | tee /etc/apt/trusted.gpg.d/typora.asc
 add-apt-repository 'deb https://typora.io/linux ./'
 apt update && apt upgrade
 apt install typora
 ```
-#### `vscode`
+##### `vscode`
 
 ```bash
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc
@@ -824,7 +836,7 @@ apt update && apt upgrade
 apt install code
 ```
 
-#### `zotero`
+##### `zotero`
 
 Visit [https://www.zotero.org/download/](https://www.zotero.org/download/) and download the latest version of Zotero. As `root`:
 
@@ -844,7 +856,7 @@ chmod +x /opt/zotero/set_launcher_icon
 ln -s /opt/zotero/zotero.desktop /home/naf/.local/share/applications/zotero.desktop
 ```
 
-##### `zotero-better-bibtex`
+###### `zotero-better-bibtex`
 
 Visit [https://github.com/retorquere/zotero-better-bibtex/releases/latest](https://github.com/retorquere/zotero-better-bibtex/releases/latest) and download `.xpi`file.
 
@@ -856,9 +868,17 @@ Run Zotero.
 4. Choose .xpi that you’ve just downloaded, click ‘Install’
 5. Restart Zotero if you’re using Zotero 6
 
-## Notes
+## Flathub Software Repositories
 
-### Delete Gnome games.
+I am not using Flatpak yet.
+
+- https://flathub.org/apps/org.kde.kdenlive
+- https://flathub.org/apps/com.obsproject.Studio
+- https://flathub.org/apps/dev.storyapps.starc
+
+## Configuration
+
+### Delete Gnome Games
 
 ```bash
 apt purge gnome-games
@@ -919,23 +939,17 @@ And:
 dpkg-reconfigure gdm3
 ```
 
-### Configure LAMP
+### LAMP Settings
 
 - https://wiki.debian.org/LaMp
 
-## Add on
+### Extensions
 
 - https://extensions.gnome.org/extension/4269/alphabetical-app-grid/
-
 - https://cockpit-project.org/running.html#debian
 - Zoom
 - Bibtex
 
+## Bibliography
 
-## Flathub
-
-I am not using Flatpak yet.
-
-- https://flathub.org/apps/org.kde.kdenlive
-- https://flathub.org/apps/com.obsproject.Studio
-- https://flathub.org/apps/dev.storyapps.starc
+[^1]: Verse 3 from At-Talaq.

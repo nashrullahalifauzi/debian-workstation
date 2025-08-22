@@ -5,6 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Nashrullah Ali Fauzi" />
+  <meta name="dcterms.date" content="2025-08-22" />
   <title>Debian Workstation</title>
   <style>
     code{white-space: pre-wrap;}
@@ -87,67 +88,83 @@
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="new.css" />
+  <link rel="stylesheet" href="latex-css/style.css" />
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">Debian Workstation</h1>
 <p class="author">Nashrullah Ali Fauzi</p>
+<p class="date">August 22, 2025</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+Create workstations more smartly. Build life more easily. Run very fast
+and steadily. The jobs will get done quickly. <em>And will provide for
+him from where he does not expect …</em> <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+</div>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
+<li><a href="#debian-workstation" id="toc-debian-workstation">Debian
+Workstation</a>
+<ul>
+<li><a href="#debian-installation" id="toc-debian-installation">Debian
+Installation</a>
+<ul>
+<li><a href="#download" id="toc-download">Download</a></li>
 <li><a href="#verify-the-image" id="toc-verify-the-image">Verify the
 Image</a></li>
 <li><a href="#write-a-usbcddvdbd-image-to-a-usb-flash-drive"
 id="toc-write-a-usbcddvdbd-image-to-a-usb-flash-drive">Write a
 USB/CD/DVD/BD Image to a USB Flash Drive</a></li>
+</ul></li>
 <li><a href="#debian-software-repositories"
 id="toc-debian-software-repositories">Debian Software Repositories</a>
 <ul>
-<li><a href="#debian-stable" id="toc-debian-stable">Debian
-Stable</a></li>
-<li><a href="#debian-testing" id="toc-debian-testing">Debian
-Testing</a></li>
-<li><a href="#testing-unstable-mix"
-id="toc-testing-unstable-mix">Testing-Unstable Mix</a></li>
-<li><a href="#testing-unstable-experimental-mix-user"
-id="toc-testing-unstable-experimental-mix-user">Testing-Unstable-Experimental
-Mix User</a></li>
-<li><a href="#list-of-debian-sofware"
-id="toc-list-of-debian-sofware">List of Debian Sofware</a></li>
+<li><a href="#debian-sources-currently-in-use"
+id="toc-debian-sources-currently-in-use">Debian Sources Currently in
+Use</a></li>
+<li><a href="#backed-up-debian-sources"
+id="toc-backed-up-debian-sources">Backed Up Debian Sources</a></li>
+<li><a href="#debian-software-currently-in-use"
+id="toc-debian-software-currently-in-use">Debian Software Currently in
+Use</a></li>
 </ul></li>
 <li><a href="#non-debian-software-repositories"
 id="toc-non-debian-software-repositories">Non-Debian Software
 Repositories</a></li>
-<li><a href="#notes" id="toc-notes">Notes</a>
+<li><a href="#flathub-software-repositories"
+id="toc-flathub-software-repositories">Flathub Software
+Repositories</a></li>
+<li><a href="#configuration" id="toc-configuration">Configuration</a>
 <ul>
-<li><a href="#delete-gnome-games." id="toc-delete-gnome-games.">Delete
-Gnome games.</a></li>
+<li><a href="#delete-gnome-games" id="toc-delete-gnome-games">Delete
+Gnome Games</a></li>
 <li><a href="#change-background-grub"
 id="toc-change-background-grub">Change Background Grub</a></li>
 <li><a href="#change-gdm-background"
 id="toc-change-gdm-background">Change GDM Background</a></li>
 <li><a href="#disable-the-user-list"
 id="toc-disable-the-user-list">Disable the user list</a></li>
-<li><a href="#configure-lamp" id="toc-configure-lamp">Configure
-LAMP</a></li>
+<li><a href="#lamp-settings" id="toc-lamp-settings">LAMP
+Settings</a></li>
+<li><a href="#extensions" id="toc-extensions">Extensions</a></li>
 </ul></li>
-<li><a href="#add-on" id="toc-add-on">Add on</a></li>
-<li><a href="#flathub" id="toc-flathub">Flathub</a></li>
+<li><a href="#bibliography" id="toc-bibliography">Bibliography</a></li>
+</ul></li>
 </ul>
 </nav>
 <figure>
-<img src="assets/png/tux-plasma.png" alt="Debian Workstation" />
+<img src="assets/png/tux-plasma-wall.png" alt="Debian Workstation" />
 <figcaption aria-hidden="true">Debian Workstation</figcaption>
 </figure>
+<h1 id="debian-workstation">Debian Workstation</h1>
 <p>Personal computer desktop and/or laptop designed for technical or
 scientific applications. The main desktop environment is Plasma, but we
 occasionally use GNOME, and sometimes we use a window manager like
 Openbox, Sway, Hyperland.</p>
-<figure>
-<img src="assets/png/terminal.png" alt="Nvidia Quadro 1000M" />
-<figcaption aria-hidden="true">Nvidia Quadro 1000M</figcaption>
-</figure>
+<h2 id="debian-installation">Debian Installation</h2>
+<h3 id="download">Download</h3>
 <p>Visit
 <code>https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/</code>.
 Download <a
@@ -156,27 +173,25 @@ image</a>.</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">naf@syenasweta:~/home/naf/Downloads/#</span> ls</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">debian-13.0.0-amd64-DVD-1.iso</span>  SHA256SUMS   SHA256SUMS.sign  SHA512SUMS  SHA512SUMS.sign</span></code></pre></div>
-<h2 id="verify-the-image">Verify the Image</h2>
+<h3 id="verify-the-image">Verify the Image</h3>
 <div class="sourceCode" id="cb2"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">naf@syenasweta:~/Downloads/#</span> gpg <span class="at">--keyserver</span> keyring.debian.org <span class="at">--recv-keys</span> DA87E80D6294BE9B</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">naf@syenasweta:~/Downloads/#</span> gpg <span class="at">--list-keys</span> <span class="kw">|</span> <span class="fu">less</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">naf@syenasweta:~/Downloads/#</span> gpg <span class="at">--list-keys</span> DA87E80D6294BE9B</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">naf@syenasweta:~/Downloads/#</span> gpg <span class="at">--verify</span> SHA512SUMS.sign SHA512SUMS</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">naf@syenasweta:~/Downloads/#</span> sha512sum <span class="at">--check</span> <span class="at">--ignore-missing</span> SHA512SUMS</span></code></pre></div>
-<h2 id="write-a-usbcddvdbd-image-to-a-usb-flash-drive">Write a
-USB/CD/DVD/BD Image to a USB Flash Drive</h2>
+<h3 id="write-a-usbcddvdbd-image-to-a-usb-flash-drive">Write a
+USB/CD/DVD/BD Image to a USB Flash Drive</h3>
 <div class="sourceCode" id="cb3"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">root@syenasweta:~#</span> lsblk</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">root@syenasweta:~#</span> dd if=/home/naf/Downloads/debian/debian-13.0.0-amd64-DVD-1.iso of=/dev/sdc bs=1M status=progress oflag=sync</span></code></pre></div>
-<figure>
-<img src="assets/png/nvidia.png" alt="Nvidia Quadro 1000M" />
-<figcaption aria-hidden="true">Nvidia Quadro 1000M</figcaption>
-</figure>
-<figure>
-<img src="assets/png/inkscape.png" alt="CPU-X" />
-<figcaption aria-hidden="true">CPU-X</figcaption>
-</figure>
 <h2 id="debian-software-repositories">Debian Software Repositories</h2>
+<figure>
+<img src="assets/png/terminal.png" alt="Terminal" />
+<figcaption aria-hidden="true">Terminal</figcaption>
+</figure>
+<h3 id="debian-sources-currently-in-use">Debian Sources Currently in
+Use</h3>
 <p>As <code>root</code>, add to
 <code>/etc/apt/sources.list.d/debian.sources</code>.</p>
 <div class="sourceCode" id="cb4"><pre
@@ -214,12 +229,9 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="
 <span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="ex">Suites:</span> experimental</span>
 <span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="ex">Components:</span> main non-free-firmware contrib non-free</span>
 <span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="ex">Signed-By:</span> /usr/share/keyrings/debian-archive-keyring.gpg</span></code></pre></div>
-<details>
-<summary>
-Old Source!
-</summary>
+<h3 id="backed-up-debian-sources">Backed Up Debian Sources</h3>
 <p>As <code>root</code>, add to <code>/etc/apt/sources.list</code>.</p>
-<h3 id="debian-stable">Debian Stable</h3>
+<h4 id="debian-stable">Debian Stable</h4>
 <div class="sourceCode" id="cb5"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#deb cdrom:[Debian GNU/Linux 13.0.0 _Trixie_ - Official amd64 NETINST with firmware 20250809-11:20]/ trixie contrib main non-free-firmware</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -244,7 +256,7 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="
 <span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="co"># debian-backports</span></span>
 <span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="ex">deb</span> http://deb.debian.org/debian trixie-backports main non-free-firmware contrib non-free    </span>
 <span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="ex">deb-src</span> http://deb.debian.org/debian trixie-backports main non-free-firmware contrib non-free</span></code></pre></div>
-<h3 id="debian-testing">Debian Testing</h3>
+<h4 id="debian-testing">Debian Testing</h4>
 <p>Read the document in the link: <a
 href="https://wiki.debian.org/DebianTesting">https://wiki.debian.org/DebianTesting</a>.</p>
 <div class="sourceCode" id="cb6"><pre
@@ -271,7 +283,7 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="
 <span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="co"># debian-backports</span></span>
 <span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="co"># deb http://deb.debian.org/debian trixie-backports main non-free-firmware contrib non-free</span></span>
 <span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="co"># deb-src http://deb.debian.org/debian trixie-backports main non-free-firmware contrib non-free</span></span></code></pre></div>
-<h3 id="testing-unstable-mix">Testing-Unstable Mix</h3>
+<h4 id="testing-unstable-mix">Testing-Unstable Mix</h4>
 <div class="sourceCode" id="cb7"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#deb cdrom:[Debian GNU/Linux 13.0.0 _Trixie_ - Official amd64 NETINST with firmware 20250809-11:20]/ trixie contrib main non-free-firmware</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -300,9 +312,9 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="
 <span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a><span class="co"># testing-unstable mix</span></span>
 <span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a><span class="ex">deb</span> http://deb.debian.org/debian/ unstable main non-free-firmware contrib non-free</span>
 <span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a><span class="ex">deb-src</span> http://deb.debian.org/debian/ unstable main non-free-firmware contrib non-free</span></code></pre></div>
-<h3
+<h4
 id="testing-unstable-experimental-mix-user">Testing-Unstable-Experimental
-Mix User</h3>
+Mix User</h4>
 <div class="sourceCode" id="cb8"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Testing-Unstable-Experimental Mix User</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the docs:</span></span>
@@ -333,131 +345,135 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="
 <span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a><span class="co"># experimental</span></span>
 <span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="ex">deb</span> https://deb.debian.org/debian/ experimental main non-free-firmware contrib non-free</span>
 <span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="ex">deb-src</span> http://deb.debian.org/debian/ experimental main non-free-firmware contrib non-free</span></code></pre></div>
-</details>
-<h3 id="list-of-debian-sofware">List of Debian Sofware</h3>
-<h4 id="alacritty"><code>alacritty</code></h4>
+<h3 id="debian-software-currently-in-use">Debian Software Currently in
+Use</h3>
+<figure>
+<img src="assets/png/nvidia.png" alt="Nvidia Quadro 1000M" />
+<figcaption aria-hidden="true">Nvidia Quadro 1000M</figcaption>
+</figure>
+<h5 id="alacritty"><code>alacritty</code></h5>
 <p><a href="https://packages.debian.org/trixie/alacritty"><img
 src="https://img.shields.io/debian/v/alacritty/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=alacritty&amp;color=c70036"
 title="alacritty" alt="alacritty" /></a></p>
 <div class="sourceCode" id="cb9"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install alacritty</span></code></pre></div>
-<h4 id="apache2"><code>apache2</code></h4>
+<h5 id="apache2"><code>apache2</code></h5>
 <p><a href="https://packages.debian.org/trixie/apache2"><img
 src="https://img.shields.io/debian/v/apache2/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=apache2&amp;color=c70036"
 title="vector-based drawing program" alt="apache2" /></a></p>
 <div class="sourceCode" id="cb10"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install apache2</span></code></pre></div>
-<h4 id="apache2-doc"><code>apache2-doc</code></h4>
+<h5 id="apache2-doc"><code>apache2-doc</code></h5>
 <p><a href="https://packages.debian.org/trixie/apache2-doc"><img
 src="https://img.shields.io/debian/v/apache2-doc/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=apache2-doc&amp;color=c70036"
 title="vector-based drawing program" alt="apache2" /></a></p>
 <div class="sourceCode" id="cb11"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install apache2-doc</span></code></pre></div>
-<h4 id="apt-transport-https"><code>apt-transport-https</code></h4>
+<h5 id="apt-transport-https"><code>apt-transport-https</code></h5>
 <p><a href="https://packages.debian.org/trixie/apt-transport-https"><img
 src="https://img.shields.io/debian/v/apt-transport-https/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=apt-transport-https&amp;color=c70036"
 title="vector-based drawing program"
 alt="apt-transport-https" /></a></p>
 <div class="sourceCode" id="cb12"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install apt-transport-https</span></code></pre></div>
-<h4 id="atril"><code>atril</code></h4>
+<h5 id="atril"><code>atril</code></h5>
 <p><a href="https://packages.debian.org/trixie/atril"><img
 src="https://img.shields.io/debian/v/atril/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=atril&amp;color=c70036"
 title="vector-based drawing program" alt="atril" /></a></p>
 <div class="sourceCode" id="cb13"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install atril</span></code></pre></div>
-<h4 id="audacious"><code>audacious</code></h4>
+<h5 id="audacious"><code>audacious</code></h5>
 <p><a href="https://packages.debian.org/trixie/audacious"><img
 src="https://img.shields.io/debian/v/audacious/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=audacious&amp;color=c70036"
 title="vector-based drawing program" alt="audacious" /></a></p>
 <div class="sourceCode" id="cb14"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install audacious</span></code></pre></div>
-<h4 id="audacity"><code>audacity</code></h4>
+<h5 id="audacity"><code>audacity</code></h5>
 <p><a href="https://packages.debian.org/trixie/audacity"><img
 src="https://img.shields.io/debian/v/audacity/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=audacity&amp;color=c70036"
 title="vector-based drawing program" alt="audacity" /></a></p>
 <div class="sourceCode" id="cb15"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install audacity</span></code></pre></div>
-<h4 id="blender"><code>blender</code></h4>
+<h5 id="blender"><code>blender</code></h5>
 <p><a href="https://packages.debian.org/trixie/blender"><img
 src="https://img.shields.io/debian/v/blender/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=blender&amp;color=c70036"
 title="vector-based drawing program" alt="blender" /></a></p>
 <div class="sourceCode" id="cb16"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install blender</span></code></pre></div>
-<h4 id="btop"><code>btop</code></h4>
+<h5 id="btop"><code>btop</code></h5>
 <p><a href="https://packages.debian.org/trixie/btop"><img
 src="https://img.shields.io/debian/v/btop/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=btop&amp;color=c70036"
 title="vector-based drawing program" alt="btop" /></a></p>
 <div class="sourceCode" id="cb17"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install btop</span></code></pre></div>
-<h4 id="calibre"><code>calibre</code></h4>
+<h5 id="calibre"><code>calibre</code></h5>
 <p><a href="https://packages.debian.org/trixie/calibre"><img
 src="https://img.shields.io/debian/v/calibre/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=calibre&amp;color=c70036"
 title="vector-based drawing program" alt="calibre" /></a></p>
 <div class="sourceCode" id="cb18"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install calibre</span></code></pre></div>
-<h4 id="chromium"><code>chromium</code></h4>
+<h5 id="chromium"><code>chromium</code></h5>
 <p><a href="https://packages.debian.org/trixie/chromium"><img
 src="https://img.shields.io/debian/v/chromium/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=chromium&amp;color=c70036"
 title="vector-based drawing program" alt="chromium" /></a></p>
 <div class="sourceCode" id="cb19"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install chromium</span></code></pre></div>
-<h4 id="cocpit"><code>cocpit</code></h4>
+<h5 id="cocpit"><code>cocpit</code></h5>
 <p><a href="https://packages.debian.org/trixie-backports/cockpit"><img
 src="https://img.shields.io/debian/v/chromium/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=cockpit&amp;color=c70036"
 title="Web Console for Linux servers" alt="cockpit" /></a></p>
 <div class="sourceCode" id="cb20"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install cockpit/trixie-backports</span></code></pre></div>
-<h4 id="color-picker"><code>color-picker</code></h4>
+<h5 id="color-picker"><code>color-picker</code></h5>
 <p><a href="https://packages.debian.org/trixie/color-picker"><img
 src="https://img.shields.io/debian/v/color-picker/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=color-picker&amp;color=c70036"
 title="vector-based drawing program" alt="color-picker" /></a></p>
 <div class="sourceCode" id="cb21"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install color-picker</span></code></pre></div>
-<h4 id="cpu-x"><code>cpu-x</code></h4>
+<h5 id="cpu-x"><code>cpu-x</code></h5>
 <p><a href="https://packages.debian.org/trixie/cpu-x"><img
 src="https://img.shields.io/debian/v/cpu-x/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=cpu-x&amp;color=c70036"
 title="vector-based drawing program" alt="cpu-x" /></a></p>
 <div class="sourceCode" id="cb22"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install cpu-x</span></code></pre></div>
-<h4 id="curl"><code>curl</code></h4>
+<h5 id="curl"><code>curl</code></h5>
 <p><a href="https://packages.debian.org/trixie/curl"><img
 src="https://img.shields.io/debian/v/curl/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=curl&amp;color=c70036"
 title="vector-based drawing program" alt="curl" /></a></p>
 <div class="sourceCode" id="cb23"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install curl</span></code></pre></div>
-<h4 id="ebook-speaker"><code>ebook-speaker</code></h4>
+<h5 id="ebook-speaker"><code>ebook-speaker</code></h5>
 <p><a href="https://packages.debian.org/trixie/ebook-speaker"><img
 src="https://img.shields.io/debian/v/ebook-speaker/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=ebook-speaker&amp;color=c70036"
 title="vector-based drawing program" alt="ebook-speaker" /></a></p>
 <div class="sourceCode" id="cb24"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install ebook-speaker</span></code></pre></div>
-<h4 id="dconf-editor"><code>dconf-editor</code></h4>
+<h5 id="dconf-editor"><code>dconf-editor</code></h5>
 <p><a href="https://packages.debian.org/trixie/dconf-editor"><img
 src="https://img.shields.io/debian/v/dconf-editor/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=ebook-speaker&amp;color=c70036"
 title="vector-based drawing program" alt="dconf-editor" /></a></p>
 <div class="sourceCode" id="cb25"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install dconf-editor</span></code></pre></div>
-<h4 id="fastfetch"><code>fastfetch</code></h4>
+<h5 id="fastfetch"><code>fastfetch</code></h5>
 <p><a href="https://packages.debian.org/trixie/fastfetch"><img
 src="https://img.shields.io/debian/v/fastfetch/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=fastfetch&amp;color=c70036"
 title="vector-based drawing program" alt="fastfetch" /></a></p>
 <div class="sourceCode" id="cb26"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install fastfetch</span></code></pre></div>
-<h4 id="ffmpeg"><code>ffmpeg</code></h4>
+<h5 id="ffmpeg"><code>ffmpeg</code></h5>
 <p><a href="https://packages.debian.org/trixie/ffmpeg"><img
 src="https://img.shields.io/debian/v/ffmpeg/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=ffmpeg&amp;color=c70036"
 title="vector-based drawing program" alt="ffmpeg" /></a></p>
 <div class="sourceCode" id="cb27"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install ffmpeg</span></code></pre></div>
-<h4 id="filezilla"><code>filezilla</code></h4>
+<h5 id="filezilla"><code>filezilla</code></h5>
 <p><a href="https://packages.debian.org/trixie/filezilla"><img
 src="https://img.shields.io/debian/v/filezilla/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=filezilla&amp;color=c70036"
 title="vector-based drawing program" alt="filezilla" /></a></p>
 <div class="sourceCode" id="cb28"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install filezilla</span></code></pre></div>
-<h4
-id="fonts-crosextra-caladea"><code>fonts-crosextra-caladea</code></h4>
+<h5
+id="fonts-crosextra-caladea"><code>fonts-crosextra-caladea</code></h5>
 <p><a
 href="https://packages.debian.org/trixie/fonts-crosextra-caladea"><img
 src="https://img.shields.io/debian/v/fonts-crosextra-caladea/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=fonts-crosextra-caladea&amp;color=c70036"
@@ -465,14 +481,14 @@ title="vector-based drawing program"
 alt="fonts-crosextra-caladea" /></a></p>
 <div class="sourceCode" id="cb29"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install fonts-crosextra-caladea</span></code></pre></div>
-<h4 id="fonts-inter"><code>fonts-inter</code></h4>
+<h5 id="fonts-inter"><code>fonts-inter</code></h5>
 <p><a href="https://packages.debian.org/trixie/fonts-inter"><img
 src="https://img.shields.io/debian/v/fonts-inter/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=fonts-inter&amp;color=c70036"
 title="vector-based drawing program" alt="fonts-inter" /></a></p>
 <div class="sourceCode" id="cb30"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install fonts-inter</span></code></pre></div>
-<h4
-id="fonts-crosextra-carlito"><code>fonts-crosextra-carlito</code></h4>
+<h5
+id="fonts-crosextra-carlito"><code>fonts-crosextra-carlito</code></h5>
 <p><a
 href="https://packages.debian.org/trixie/fonts-crosextra-carlito"><img
 src="https://img.shields.io/debian/v/fonts-crosextra-carlito/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=fonts-crosextra-carlito&amp;color=c70036"
@@ -480,7 +496,7 @@ title="vector-based drawing program"
 alt="fonts-crosextra-carlito" /></a></p>
 <div class="sourceCode" id="cb31"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install fonts-crosextra-carlito</span></code></pre></div>
-<h4 id="fonts-jetbrains-mono"><code>fonts-jetbrains-mono</code></h4>
+<h5 id="fonts-jetbrains-mono"><code>fonts-jetbrains-mono</code></h5>
 <p><a
 href="https://packages.debian.org/trixie/fonts-jetbrains-mono"><img
 src="https://img.shields.io/debian/v/fonts-jetbrains-mono/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=fonts-jetbrains-mono&amp;color=c70036"
@@ -488,191 +504,191 @@ title="vector-based drawing program"
 alt="fonts-jetbrains-mono" /></a></p>
 <div class="sourceCode" id="cb32"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install fonts-jetbrains-mono</span></code></pre></div>
-<h4 id="font-manager"><code>font-manager</code></h4>
+<h5 id="font-manager"><code>font-manager</code></h5>
 <p><a href="https://packages.debian.org/trixie/font-manager"><img
 src="https://img.shields.io/debian/v/font-manager/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=font-manager&amp;color=c70036"
 title="vector-based drawing program" alt="font-manager" /></a></p>
 <div class="sourceCode" id="cb33"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install font-manager</span></code></pre></div>
-<h4 id="font-viewer"><code>font-viewer</code></h4>
+<h5 id="font-viewer"><code>font-viewer</code></h5>
 <p><a href="https://packages.debian.org/trixie/font-viewer"><img
 src="https://img.shields.io/debian/v/font-viewer/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=font-viewer&amp;color=c70036"
 title="vector-based drawing program" alt="font-viewer" /></a></p>
 <div class="sourceCode" id="cb34"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install font-viewer</span></code></pre></div>
-<h4 id="freecad"><code>freecad</code></h4>
+<h5 id="freecad"><code>freecad</code></h5>
 <p><a href="https://packages.debian.org/trixie/freecad"><img
 src="https://img.shields.io/debian/v/freecad/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=freecad&amp;color=c70036"
 title="vector-based drawing program" alt="freecad" /></a></p>
 <div class="sourceCode" id="cb35"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install freecad</span></code></pre></div>
-<h4 id="freeplane"><code>freeplane</code></h4>
+<h5 id="freeplane"><code>freeplane</code></h5>
 <p><a href="https://packages.debian.org/trixie/freeplane"><img
 src="https://img.shields.io/debian/v/freeplane/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=freeplane&amp;color=c70036"
 title="vector-based drawing program" alt="freeplane" /></a></p>
 <div class="sourceCode" id="cb36"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install freeplane</span></code></pre></div>
-<h4 id="geany"><code>geany</code></h4>
+<h5 id="geany"><code>geany</code></h5>
 <p><a href="https://packages.debian.org/trixie/geany"><img
 src="https://img.shields.io/debian/v/geany/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=geany&amp;color=c70036"
 title="vector-based drawing program" alt="geany" /></a></p>
 <div class="sourceCode" id="cb37"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install geany</span></code></pre></div>
-<h4 id="gdebi"><code>gdebi</code></h4>
+<h5 id="gdebi"><code>gdebi</code></h5>
 <p><a href="https://packages.debian.org/trixie/gdebi"><img
 src="https://img.shields.io/debian/v/gdebi/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=gdebi&amp;color=c70036"
 title="vector-based drawing program" alt="gdebi" /></a></p>
 <div class="sourceCode" id="cb38"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install gdebi</span></code></pre></div>
-<h4 id="gimp"><code>gimp</code></h4>
+<h5 id="gimp"><code>gimp</code></h5>
 <p><a href="https://packages.debian.org/trixie/gimp"><img
 src="https://img.shields.io/debian/v/gimp/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=gimp&amp;color=c70036"
 title="vector-based drawing program" alt="gimp" /></a></p>
 <div class="sourceCode" id="cb39"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install gimp</span></code></pre></div>
-<h4 id="git"><code>git</code></h4>
+<h5 id="git"><code>git</code></h5>
 <p><a href="https://packages.debian.org/trixie/git"><img
 src="https://img.shields.io/debian/v/git/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=git&amp;color=c70036"
 title="vector-based drawing program" alt="git" /></a></p>
 <div class="sourceCode" id="cb40"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install git</span></code></pre></div>
-<h4 id="gnome-power-manager"><code>gnome-power-manager</code></h4>
+<h5 id="gnome-power-manager"><code>gnome-power-manager</code></h5>
 <p><a href="https://packages.debian.org/trixie/gnome-power-manager"><img
 src="https://img.shields.io/debian/v/gnome-power-manager/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=gnome-power-manager&amp;color=c70036"
 title="vector-based drawing program"
 alt="gnome-power-manager" /></a></p>
 <div class="sourceCode" id="cb41"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install gnome-power-manager</span></code></pre></div>
-<h4 id="gnucash"><code>gnucash</code></h4>
+<h5 id="gnucash"><code>gnucash</code></h5>
 <p><a href="https://packages.debian.org/trixie/gnucash"><img
 src="https://img.shields.io/debian/v/gnucash/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=gnucash&amp;color=c70036"
 title="vector-based drawing program" alt="gnucash" /></a></p>
 <div class="sourceCode" id="cb42"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install gnucash</span></code></pre></div>
-<h4 id="gparted"><code>gparted</code></h4>
+<h5 id="gparted"><code>gparted</code></h5>
 <p><a href="https://packages.debian.org/trixie/gparted"><img
 src="https://img.shields.io/debian/v/gparted/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=gparted&amp;color=c70036"
 title="vector-based drawing program" alt="gparted" /></a></p>
 <div class="sourceCode" id="cb43"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install gparted</span></code></pre></div>
-<h4 id="gscan2pdf"><code>gscan2pdf</code></h4>
+<h5 id="gscan2pdf"><code>gscan2pdf</code></h5>
 <p><a href="https://packages.debian.org/trixie/gscan2pdf"><img
 src="https://img.shields.io/debian/v/gscan2pdf/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=gscan2pdf&amp;color=c70036"
 title="vector-based drawing program" alt="gscan2pdf" /></a></p>
 <div class="sourceCode" id="cb44"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install gscan2pdf</span></code></pre></div>
-<h4 id="gsmartcontrol"><code>gsmartcontrol</code></h4>
+<h5 id="gsmartcontrol"><code>gsmartcontrol</code></h5>
 <p><a href="https://packages.debian.org/trixie/gsmartcontrol"><img
 src="https://img.shields.io/debian/v/gsmartcontrol/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=gsmartcontrol&amp;color=c70036"
 title="vector-based drawing program" alt="gsmartcontrol" /></a></p>
 <div class="sourceCode" id="cb45"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install gsmartcontrol</span></code></pre></div>
-<h4 id="gstreamer1.0-vaapi"><code>gstreamer1.0-vaapi</code></h4>
+<h5 id="gstreamer1.0-vaapi"><code>gstreamer1.0-vaapi</code></h5>
 <p><a href="https://packages.debian.org/trixie/gstreamer1.0-vaapi"><img
 src="https://img.shields.io/debian/v/gstreamer1.0-vaapi/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=gstreamer1.0-vaapi&amp;color=c70036"
 title="vector-based drawing program" alt="gstreamer1.0-vaapi" /></a></p>
 <div class="sourceCode" id="cb46"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install gstreamer1.0-vaapi</span></code></pre></div>
-<h4 id="gthumb"><code>gthumb</code></h4>
+<h5 id="gthumb"><code>gthumb</code></h5>
 <p><a href="https://packages.debian.org/trixie/gthumb"><img
 src="https://img.shields.io/debian/v/gthumb/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=gthumb&amp;color=c70036"
 title="vector-based drawing program" alt="gthumb" /></a></p>
 <div class="sourceCode" id="cb47"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install gthumb</span></code></pre></div>
-<h4 id="hardinfo"><code>hardinfo</code></h4>
+<h5 id="hardinfo"><code>hardinfo</code></h5>
 <p><a href="https://packages.debian.org/trixie/hardinfo"><img
 src="https://img.shields.io/debian/v/hardinfo/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=hardinfo&amp;color=c70036"
 title="vector-based drawing program" alt="hardinfo" /></a></p>
 <div class="sourceCode" id="cb48"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install hardinfo</span></code></pre></div>
-<h4 id="htop"><code>htop</code></h4>
+<h5 id="htop"><code>htop</code></h5>
 <p><a href="https://packages.debian.org/trixie/htop"><img
 src="https://img.shields.io/debian/v/htop/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=htop&amp;color=c70036"
 title="vector-based drawing program" alt="htop" /></a></p>
 <div class="sourceCode" id="cb49"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install htop</span></code></pre></div>
-<h4 id="inkscape"><code>inkscape</code></h4>
+<h5 id="inkscape"><code>inkscape</code></h5>
 <p><a href="https://packages.debian.org/trixie/inkscape"><img
 src="https://img.shields.io/debian/v/inkscape/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=inkscape&amp;color=c70036"
 title="vector-based drawing program" alt="inkscape" /></a></p>
 <div class="sourceCode" id="cb50"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install inkscape</span></code></pre></div>
-<h4 id="img2pdf"><code>img2pdf</code></h4>
+<h5 id="img2pdf"><code>img2pdf</code></h5>
 <p><a href="https://packages.debian.org/trixie/img2pdf"><img
 src="https://img.shields.io/debian/v/img2pdf/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=img2pdf&amp;color=c70036"
 title="vector-based drawing program" alt="img2pdf" /></a></p>
 <div class="sourceCode" id="cb51"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install img2pdf</span></code></pre></div>
-<h4 id="kdenlive"><code>kdenlive</code></h4>
+<h5 id="kdenlive"><code>kdenlive</code></h5>
 <p><a href="https://packages.debian.org/trixie/kdenlive"><img
 src="https://img.shields.io/debian/v/kdenlive/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=kdenlive&amp;color=c70036"
 title="vector-based drawing program" alt="kdenlive" /></a></p>
 <div class="sourceCode" id="cb52"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install kdenlive</span></code></pre></div>
-<h4 id="kde-config-plymouth"><code>kde-config-plymouth</code></h4>
+<h5 id="kde-config-plymouth"><code>kde-config-plymouth</code></h5>
 <p><a href="https://packages.debian.org/trixie/kde-config-plymouth"><img
 src="https://img.shields.io/debian/v/kde-config-plymouth/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=kde-config-plymouth&amp;color=c70036"
 title="kde-config-plymouth" alt="photocollage" /></a></p>
 <div class="sourceCode" id="cb53"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install kde-config-plymouth</span></code></pre></div>
-<h4 id="kicad"><code>kicad</code></h4>
+<h5 id="kicad"><code>kicad</code></h5>
 <p><a href="https://packages.debian.org/trixie/kicad"><img
 src="https://img.shields.io/debian/v/kicad/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=kicad&amp;color=c70036"
 title="Electronic schematic and PCB design software."
 alt="kicad" /></a></p>
 <div class="sourceCode" id="cb54"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install kicad kicad-footprints kicad-libraries kicad-packages3d kicad-symbols kicad-templates kicad-doc-en kicad-demos</span></code></pre></div>
-<h4 id="kraft"><code>kraft</code></h4>
+<h5 id="kraft"><code>kraft</code></h5>
 <p><a href="https://packages.debian.org/trixie/kraft"><img
 src="https://img.shields.io/debian/v/kraft/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=kraft&amp;color=c70036"
 title="vector-based drawing program" alt="kraft" /></a></p>
 <div class="sourceCode" id="cb55"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install kraft</span></code></pre></div>
-<h4 id="krita"><code>krita</code></h4>
+<h5 id="krita"><code>krita</code></h5>
 <p><a href="https://packages.debian.org/trixie/krita"><img
 src="https://img.shields.io/debian/v/krita/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=krita&amp;color=c70036"
 title="vector-based drawing program" alt="krita" /></a></p>
 <div class="sourceCode" id="cb56"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install krita</span></code></pre></div>
-<h4 id="libavcodec-extra"><code>libavcodec-extra</code></h4>
+<h5 id="libavcodec-extra"><code>libavcodec-extra</code></h5>
 <p><a href="https://packages.debian.org/trixie/libavcodec-extra"><img
 src="https://img.shields.io/debian/v/libavcodec-extra/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=libavcodec-extra&amp;color=c70036"
 title="vector-based drawing program" alt="libavcodec-extra" /></a></p>
 <div class="sourceCode" id="cb57"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install libavcodec-extra</span></code></pre></div>
-<h4 id="librecad"><code>librecad</code></h4>
+<h5 id="librecad"><code>librecad</code></h5>
 <p><a href="https://packages.debian.org/trixie/librecad"><img
 src="https://img.shields.io/debian/v/librecad/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=librecad&amp;color=c70036"
 title="vector-based drawing program" alt="librecad" /></a></p>
 <div class="sourceCode" id="cb58"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install librecad</span></code></pre></div>
-<h4 id="libxcb-xtest0"><code>libxcb-xtest0</code></h4>
+<h5 id="libxcb-xtest0"><code>libxcb-xtest0</code></h5>
 <p><a href="https://packages.debian.org/trixie/libxcb-xtest0"><img
 src="https://img.shields.io/debian/v/librecad/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=libxcb-xtest0&amp;color=c70036"
 title="libxcb-xtest0" alt="libxcb-xtest0" /></a></p>
 <div class="sourceCode" id="cb59"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install libxcb-xtest0</span></code></pre></div>
-<h4 id="lshw"><code>lshw</code></h4>
+<h5 id="lshw"><code>lshw</code></h5>
 <p><a href="https://packages.debian.org/trixie/lshw"><img
 src="https://img.shields.io/debian/v/lshw/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=lshw&amp;color=c70036"
 title="vector-based drawing program" alt="lshw" /></a></p>
 <div class="sourceCode" id="cb60"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install lshw</span></code></pre></div>
-<h4 id="nautilus-admin"><code>nautilus-admin</code></h4>
+<h5 id="nautilus-admin"><code>nautilus-admin</code></h5>
 <p><a href="https://packages.debian.org/trixie/nautilus-admin"><img
 src="https://img.shields.io/debian/v/nautilus-admin/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=nautilus-admin&amp;color=c70036"
 title="vector-based drawing program" alt="nautilus-admin" /></a></p>
 <div class="sourceCode" id="cb61"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install nautilus-admin</span></code></pre></div>
-<h4 id="neovim"><code>neovim</code></h4>
+<h5 id="neovim"><code>neovim</code></h5>
 <p><a href="https://packages.debian.org/trixie/neovim"><img
 src="https://img.shields.io/debian/v/neovim/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=neovim&amp;color=c70036"
 title="vector-based drawing program" alt="neovim" /></a></p>
 <div class="sourceCode" id="cb62"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install neovim</span></code></pre></div>
-<h4 id="nvidia"><code>nvidia</code></h4>
-<h5
-id="nvidia-legacy-390xx-driver"><code>nvidia-legacy-390xx-driver</code></h5>
+<h5 id="nvidia"><code>nvidia</code></h5>
+<h6
+id="nvidia-legacy-390xx-driver"><code>nvidia-legacy-390xx-driver</code></h6>
 <p><a
 href="https://packages.debian.org/sid/nvidia-legacy-390xx-driver"><img
 src="https://img.shields.io/debian/v/nvidia-legacy-390xx-driver/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=nvidia-legacy-390xx-driver&amp;color=c70036"
@@ -680,8 +696,8 @@ title="Graphics" alt="nvidia-tesla-470-driver" /></a></p>
 <p>For <code>Thinkpad W520</code>.</p>
 <div class="sourceCode" id="cb63"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install nvidia-legacy-390xx-driver</span></code></pre></div>
-<h5
-id="nvidia-tesla-470-driver"><code>nvidia-tesla-470-driver</code></h5>
+<h6
+id="nvidia-tesla-470-driver"><code>nvidia-tesla-470-driver</code></h6>
 <p><a
 href="https://packages.debian.org/sid/nvidia-tesla-470-driver"><img
 src="https://img.shields.io/debian/v/nvidia-tesla-470-driver/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=nvidia-tesla-470-driver&amp;color=c70036"
@@ -702,171 +718,171 @@ href="https://wiki.archlinux.org/title/NVIDIA_Optimus">https://wiki.archlinux.or
 </ol>
 <div class="sourceCode" id="cb65"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install nvidia-detect</span></code></pre></div>
-<h4 id="ocrmypdf"><code>ocrmypdf</code></h4>
+<h5 id="ocrmypdf"><code>ocrmypdf</code></h5>
 <p><a href="https://packages.debian.org/trixie/ocrmypdf"><img
 src="https://img.shields.io/debian/v/ocrmypdf/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=ocrmypdf&amp;color=c70036"
 title="vector-based drawing program" alt="ocrmypdf" /></a></p>
 <div class="sourceCode" id="cb66"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install ocrmypdf</span></code></pre></div>
-<h4 id="obs-studio"><code>obs-studio</code></h4>
+<h5 id="obs-studio"><code>obs-studio</code></h5>
 <p><a href="https://packages.debian.org/trixie/obsstudio"><img
 src="https://img.shields.io/debian/v/obs-studio/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=obs-studio&amp;color=c70036"
 title="screen-recording program" alt="obsstudio" /></a></p>
 <div class="sourceCode" id="cb67"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install obs-studio</span></code></pre></div>
-<h4 id="openscad"><code>openscad</code></h4>
+<h5 id="openscad"><code>openscad</code></h5>
 <p><a href="https://packages.debian.org/trixie/openscad"><img
 src="https://img.shields.io/debian/v/openscad/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=openscad&amp;color=c70036"
 title="vector-based drawing program" alt="openscad" /></a></p>
 <div class="sourceCode" id="cb68"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install openscad</span></code></pre></div>
-<h4 id="pandoc"><code>pandoc</code></h4>
+<h5 id="pandoc"><code>pandoc</code></h5>
 <p><a href="https://packages.debian.org/trixie/pandoc"><img
 src="https://img.shields.io/debian/v/pandoc/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=pandoc&amp;color=c70036"
 title="pandoc" alt="pandoc" /></a></p>
 <div class="sourceCode" id="cb69"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install pandoc pandoc-citeproc-preamble pandoc-data pandoc-filter-diagram pandoc-plantuml-filter pampi</span></code></pre></div>
-<h4 id="papirus-icon-theme"><code>papirus-icon-theme</code></h4>
+<h5 id="papirus-icon-theme"><code>papirus-icon-theme</code></h5>
 <p><a href="https://packages.debian.org/trixie/papirus-icon-theme"><img
 src="https://img.shields.io/debian/v/papirus-icon-theme/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=papirus-icon-theme&amp;color=c70036"
 title="vector-based drawing program" alt="papirus-icon-theme" /></a></p>
 <div class="sourceCode" id="cb70"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install papirus-icon-theme</span></code></pre></div>
-<h4 id="partitionmanager"><code>partitionmanager</code></h4>
+<h5 id="partitionmanager"><code>partitionmanager</code></h5>
 <p><a href="https://packages.debian.org/trixie/partitionmanager"><img
 src="https://img.shields.io/debian/v/partitionmanager/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=partitionmanager&amp;color=c70036"
 title="vector-based drawing program" alt="partitionmanager" /></a></p>
 <div class="sourceCode" id="cb71"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install partitionmanager</span></code></pre></div>
-<h4 id="pdfarranger"><code>pdfarranger</code></h4>
+<h5 id="pdfarranger"><code>pdfarranger</code></h5>
 <p><a href="https://packages.debian.org/trixie/pdfarranger"><img
 src="https://img.shields.io/debian/v/pdfarranger/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=pdfarranger&amp;color=c70036"
 title="vector-based drawing program" alt="pdfarranger" /></a></p>
 <div class="sourceCode" id="cb72"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install pdfarranger</span></code></pre></div>
-<h4 id="pdfsam"><code>pdfsam</code></h4>
+<h5 id="pdfsam"><code>pdfsam</code></h5>
 <p><a href="https://packages.debian.org/trixie/pdfsam"><img
 src="https://img.shields.io/debian/v/pdfsam/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=pdfsam&amp;color=c70036"
 title="vector-based drawing program" alt="pdfsam" /></a></p>
 <div class="sourceCode" id="cb73"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install pdfsam</span></code></pre></div>
-<h4 id="pdftk"><code>pdftk</code></h4>
+<h5 id="pdftk"><code>pdftk</code></h5>
 <p><a href="https://packages.debian.org/trixie/pdftk"><img
 src="https://img.shields.io/debian/v/inkscape/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=pdftk&amp;color=c70036"
 title="vector-based drawing program" alt="pdftk" /></a></p>
 <div class="sourceCode" id="cb74"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install pdftk</span></code></pre></div>
-<h4 id="photocollage"><code>photocollage</code></h4>
+<h5 id="photocollage"><code>photocollage</code></h5>
 <p><a href="https://packages.debian.org/trixie/photocollage"><img
 src="https://img.shields.io/debian/v/photocollage/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=photocollage&amp;color=c70036"
 title="vector-based drawing program" alt="photocollage" /></a></p>
 <div class="sourceCode" id="cb75"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install photocollage</span></code></pre></div>
-<h4 id="php"><code>php</code></h4>
+<h5 id="php"><code>php</code></h5>
 <p><a href="https://packages.debian.org/trixie/php"><img
 src="https://img.shields.io/debian/v/php/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=php&amp;color=c70036"
 title="vector-based drawing program" alt="photocollage" /></a></p>
 <div class="sourceCode" id="cb76"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install php</span></code></pre></div>
-<h4 id="plymouth"><code>plymouth</code></h4>
+<h5 id="plymouth"><code>plymouth</code></h5>
 <p><a href="https://packages.debian.org/trixie/plymouth"><img
 src="https://img.shields.io/debian/v/plymouth/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=plymouth&amp;color=c70036"
 title="plymouth" alt="photocollage" /></a></p>
 <div class="sourceCode" id="cb77"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install plymouth</span></code></pre></div>
-<h4 id="plymouth-themes"><code>plymouth-themes</code></h4>
+<h5 id="plymouth-themes"><code>plymouth-themes</code></h5>
 <p><a href="https://packages.debian.org/trixie/plymouth-themes"><img
 src="https://img.shields.io/debian/v/plymouth-themes/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=plymouth-themes&amp;color=c70036"
 title="plymouth-themes" alt="photocollage" /></a></p>
 <div class="sourceCode" id="cb78"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install plymouth-themes</span></code></pre></div>
-<h4 id="plymouth-theme-breeze"><code>plymouth-theme-breeze</code></h4>
+<h5 id="plymouth-theme-breeze"><code>plymouth-theme-breeze</code></h5>
 <p><a
 href="https://packages.debian.org/trixie/plymouth-theme-breezep"><img
 src="https://img.shields.io/debian/v/plymouth-theme-breeze/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=plymouth-theme-breeze&amp;color=c70036"
 title="plymouth-theme-breeze" alt="photocollage" /></a></p>
 <div class="sourceCode" id="cb79"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install plymouth-theme-breeze</span></code></pre></div>
-<h4 id="poppler-utils"><code>poppler-utils</code></h4>
+<h5 id="poppler-utils"><code>poppler-utils</code></h5>
 <p><a href="https://packages.debian.org/trixie/poppler-utils"><img
 src="https://img.shields.io/debian/v/poppler-utils/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=poppler-utils&amp;color=c70036"
 title="vector-based drawing program" alt="poppler-utils" /></a></p>
 <div class="sourceCode" id="cb80"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install poppler-utils</span></code></pre></div>
-<h4 id="printer-driver-all"><code>printer-driver-all</code></h4>
+<h5 id="printer-driver-all"><code>printer-driver-all</code></h5>
 <p><a href="https://packages.debian.org/trixie/printer-driver-all"><img
 src="https://img.shields.io/debian/v/printer-driver-all/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=printer-driver-all&amp;color=c70036"
 title="vector-based drawing program" alt="printer-driver-all" /></a></p>
 <div class="sourceCode" id="cb81"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install printer-driver-all</span></code></pre></div>
-<h4 id="qdiskinfo"><code>qdiskinfo</code></h4>
+<h5 id="qdiskinfo"><code>qdiskinfo</code></h5>
 <p><a href="https://packages.debian.org/trixie/qdiskinfo"><img
 src="https://img.shields.io/debian/v/qdiskinfo/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=qdiskinfo&amp;color=c70036"
 title="qdiskinfo" alt="qdiskinfo" /></a></p>
 <div class="sourceCode" id="cb82"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install qdiskinfo</span></code></pre></div>
-<h4 id="qmk"><code>qmk</code></h4>
+<h5 id="qmk"><code>qmk</code></h5>
 <p><a href="https://packages.debian.org/trixie/qmk"><img
 src="https://img.shields.io/debian/v/qmk/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=qmk&amp;color=c70036"
 title="qmk" alt="qmk" /></a></p>
 <div class="sourceCode" id="cb83"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install qmk</span></code></pre></div>
-<h4 id="rar"><code>rar</code></h4>
+<h5 id="rar"><code>rar</code></h5>
 <p><a href="https://packages.debian.org/trixie/rar"><img
 src="https://img.shields.io/debian/v/rar/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=rar&amp;color=c70036"
 title="vector-based drawing program" alt="rar" /></a></p>
 <div class="sourceCode" id="cb84"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install rar</span></code></pre></div>
-<h4 id="scribus"><code>scribus</code></h4>
+<h5 id="scribus"><code>scribus</code></h5>
 <p><a href="https://packages.debian.org/trixie/scribus"><img
 src="https://img.shields.io/debian/v/scribus/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=scribus&amp;color=c70036"
 title="vector-based drawing program" alt="scribus" /></a></p>
 <div class="sourceCode" id="cb85"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install scribus</span></code></pre></div>
-<h4 id="slic3r"><code>slic3r</code></h4>
+<h5 id="slic3r"><code>slic3r</code></h5>
 <p><a href="https://packages.debian.org/trixie/slic3r"><img
 src="https://img.shields.io/debian/v/slic3r/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=slic3r&amp;color=c70036"
 title="vector-based drawing program" alt="slic3r" /></a></p>
 <div class="sourceCode" id="cb86"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install slic3r</span></code></pre></div>
-<h4 id="sweethome3d"><code>sweethome3d</code></h4>
+<h5 id="sweethome3d"><code>sweethome3d</code></h5>
 <p><a href="https://packages.debian.org/trixie/sweethome3d"><img
 src="https://img.shields.io/debian/v/sweethome3d/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=sweethome3d&amp;color=c70036"
 title="vector-based drawing program" alt="sweethome3d" /></a></p>
 <div class="sourceCode" id="cb87"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install sweethome3d</span></code></pre></div>
-<h4 id="tesseract-ocr"><code>tesseract-ocr</code></h4>
+<h5 id="tesseract-ocr"><code>tesseract-ocr</code></h5>
 <p><a href="https://packages.debian.org/trixie/tesseract-ocr"><img
 src="https://img.shields.io/debian/v/tesseract-ocr/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=tesseract-ocr&amp;color=c70036"
 title="vector-based drawing program" alt="tesseract-ocr" /></a></p>
 <div class="sourceCode" id="cb88"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install tesseract-ocr</span></code></pre></div>
-<h4 id="terminator"><code>terminator</code></h4>
+<h5 id="terminator"><code>terminator</code></h5>
 <p><a href="https://packages.debian.org/trixie/terminator"><img
 src="https://img.shields.io/debian/v/terminator/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=terminator&amp;color=c70036"
 title="vector-based drawing program" alt="terminator" /></a></p>
 <div class="sourceCode" id="cb89"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install terminator</span></code></pre></div>
-<h4 id="texlive"><code>texlive</code></h4>
+<h5 id="texlive"><code>texlive</code></h5>
 <p><a href="https://packages.debian.org/trixie/texlive"><img
 src="https://img.shields.io/debian/v/texlive/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=texlive&amp;color=c70036"
 title="vector-based drawing program" alt="texlive" /></a></p>
 <div class="sourceCode" id="cb90"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install texlive</span></code></pre></div>
-<h4 id="thunar"><code>thunar</code></h4>
+<h5 id="thunar"><code>thunar</code></h5>
 <p><a href="https://packages.debian.org/trixie/thunar"><img
 src="https://img.shields.io/debian/v/thunar/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=thunar&amp;color=c70036"
 title="vector-based drawing program" alt="thunar" /></a></p>
 <div class="sourceCode" id="cb91"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install thunar</span></code></pre></div>
-<h4 id="thunderbird"><code>thunderbird</code></h4>
+<h5 id="thunderbird"><code>thunderbird</code></h5>
 <p><a href="https://packages.debian.org/trixie/thunderbird"><img
 src="https://img.shields.io/debian/v/thunderbird/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=thunderbird&amp;color=c70036"
 title="vector-based drawing program" alt="thunderbird" /></a></p>
 <div class="sourceCode" id="cb92"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install thunderbird</span></code></pre></div>
-<h4
-id="ttf-mscorefonts-installer"><code>ttf-mscorefonts-installer</code></h4>
+<h5
+id="ttf-mscorefonts-installer"><code>ttf-mscorefonts-installer</code></h5>
 <p><a
 href="https://packages.debian.org/trixie/ttf-mscorefonts-installer"><img
 src="https://img.shields.io/debian/v/ttf-mscorefonts-installer/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=ttf-mscorefonts-installer&amp;color=c70036"
@@ -874,43 +890,43 @@ title="vector-based drawing program"
 alt="ttf-mscorefonts-installer" /></a></p>
 <div class="sourceCode" id="cb93"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install ttf-mscorefonts-installer</span></code></pre></div>
-<h4 id="tree"><code>tree</code></h4>
+<h5 id="tree"><code>tree</code></h5>
 <p><a href="https://packages.debian.org/trixie/tree"><img
 src="https://img.shields.io/debian/v/tree/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=tree&amp;color=c70036"
 title="vector-based drawing program" alt="thunderbird" /></a></p>
 <div class="sourceCode" id="cb94"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install tree</span></code></pre></div>
-<h4 id="ufw"><code>ufw</code></h4>
+<h5 id="ufw"><code>ufw</code></h5>
 <p><a href="https://packages.debian.org/trixie/ufw"><img
 src="https://img.shields.io/debian/v/ufw/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=ufw&amp;color=c70036"
 title="vector-based drawing program" alt="ufw" /></a></p>
 <div class="sourceCode" id="cb95"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install ufw</span></code></pre></div>
-<h4 id="unrar"><code>unrar</code></h4>
+<h5 id="unrar"><code>unrar</code></h5>
 <p><a href="https://packages.debian.org/trixie/unrar"><img
 src="https://img.shields.io/debian/v/unrar/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=unrar&amp;color=c70036"
 title="vector-based drawing program" alt="unrar" /></a></p>
 <div class="sourceCode" id="cb96"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install unrar</span></code></pre></div>
-<h4 id="usbview"><code>usbview</code></h4>
+<h5 id="usbview"><code>usbview</code></h5>
 <p><a href="https://packages.debian.org/trixie/usbview"><img
 src="https://img.shields.io/debian/v/usbview/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=usbview&amp;color=c70036"
 title="vector-based drawing program" alt="usbview" /></a></p>
 <div class="sourceCode" id="cb97"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install usbview</span></code></pre></div>
-<h4 id="vlc"><code>vlc</code></h4>
+<h5 id="vlc"><code>vlc</code></h5>
 <p><a href="https://packages.debian.org/trixie/vlc"><img
 src="https://img.shields.io/debian/v/vlc/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=vlc&amp;color=c70036"
 title="vector-based drawing program" alt="vlc" /></a></p>
 <div class="sourceCode" id="cb98"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install vlc</span></code></pre></div>
-<h4 id="wget"><code>wget</code></h4>
+<h5 id="wget"><code>wget</code></h5>
 <p><a href="https://packages.debian.org/trixie/wget"><img
 src="https://img.shields.io/debian/v/wget/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=wget&amp;color=c70036"
 title="vector-based drawing program" alt="wget" /></a></p>
 <div class="sourceCode" id="cb99"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install wget</span></code></pre></div>
-<h4 id="wifi-qr"><code>wifi-qr</code></h4>
+<h5 id="wifi-qr"><code>wifi-qr</code></h5>
 <p><a href="https://packages.debian.org/trixie/wifi-qr"><img
 src="https://img.shields.io/debian/v/wifi-qr/trixie?style=for-the-badge&amp;logo=debian&amp;logoColor=c70036&amp;label=wifi-qr&amp;color=c70036"
 title="vector-based drawing program" alt="wifi-qr" /></a></p>
@@ -918,80 +934,80 @@ title="vector-based drawing program" alt="wifi-qr" /></a></p>
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install wifi-qr</span></code></pre></div>
 <h2 id="non-debian-software-repositories">Non-Debian Software
 Repositories</h2>
-<h4 id="chrome"><code>chrome</code></h4>
-<h4 id="gh-atril"><code>gh</code> <img
-src="https://img.shields.io/badge/github_cli-git?style=flat-square"
-alt="atril" /></h4>
+<h5 id="chrome"><code>chrome</code></h5>
 <div class="sourceCode" id="cb101"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO-</span> https://cli.github.com/packages/githubcli-archive-keyring.gpg <span class="kw">|</span> <span class="fu">tee</span> /etc/apt/keyrings/githubcli-archive-keyring.gpg <span class="op">&gt;</span> /dev/null <span class="dt">\</span></span>
-<span id="cb101-2"><a href="#cb101-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&amp;&amp;</span> <span class="fu">chmod</span> go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg <span class="dt">\</span></span>
-<span id="cb101-3"><a href="#cb101-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&amp;&amp;</span> <span class="bu">echo</span> <span class="st">&quot;deb [arch=</span><span class="va">$(</span><span class="ex">dpkg</span> <span class="at">--print-architecture</span><span class="va">)</span><span class="st"> signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main&quot;</span> <span class="kw">|</span> <span class="fu">tee</span> /etc/apt/sources.list.d/github-cli.list <span class="op">&gt;</span> /dev/null</span>
-<span id="cb101-4"><a href="#cb101-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&amp;&amp;</span> <span class="ex">apt</span> update</span>
-<span id="cb101-5"><a href="#cb101-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&amp;&amp;</span> <span class="ex">apt</span> install gh</span></code></pre></div>
-<h4 id="odafileconverter"><code>odafileconverter</code></h4>
-<h4 id="pandoc-1"><code>pandoc</code></h4>
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="ex">chrome</span></span></code></pre></div>
+<h5 id="gh"><code>gh</code></h5>
+<div class="sourceCode" id="cb102"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO-</span> https://cli.github.com/packages/githubcli-archive-keyring.gpg <span class="kw">|</span> <span class="fu">tee</span> /etc/apt/keyrings/githubcli-archive-keyring.gpg <span class="op">&gt;</span> /dev/null <span class="dt">\</span></span>
+<span id="cb102-2"><a href="#cb102-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&amp;&amp;</span> <span class="fu">chmod</span> go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg <span class="dt">\</span></span>
+<span id="cb102-3"><a href="#cb102-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&amp;&amp;</span> <span class="bu">echo</span> <span class="st">&quot;deb [arch=</span><span class="va">$(</span><span class="ex">dpkg</span> <span class="at">--print-architecture</span><span class="va">)</span><span class="st"> signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main&quot;</span> <span class="kw">|</span> <span class="fu">tee</span> /etc/apt/sources.list.d/github-cli.list <span class="op">&gt;</span> /dev/null</span>
+<span id="cb102-4"><a href="#cb102-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&amp;&amp;</span> <span class="ex">apt</span> update</span>
+<span id="cb102-5"><a href="#cb102-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&amp;&amp;</span> <span class="ex">apt</span> install gh</span></code></pre></div>
+<h5 id="odafileconverter"><code>odafileconverter</code></h5>
+<div class="sourceCode" id="cb103"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="ex">odafileconverter</span></span></code></pre></div>
+<h5 id="pandoc-1"><code>pandoc</code></h5>
 <p>Download the latest release of Pandoc via
 <code>https://github.com/jgm/pandoc/releases/latest</code>.</p>
-<div class="sourceCode" id="cb102"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/jgm/pandoc/releases/download/3.3/pandoc-3.3-1-amd64.deb</span></code></pre></div>
+<div class="sourceCode" id="cb104"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/jgm/pandoc/releases/download/3.3/pandoc-3.3-1-amd64.deb</span></code></pre></div>
 <p>Install <code>pandoc-3.3-1-amd64.deb</code> via Gdebi.</p>
-<h4 id="qmk-firmware"><code>qmk-firmware</code></h4>
+<h5 id="qmk-firmware"><code>qmk-firmware</code></h5>
 <p>Visit <code>https://github.com/qmk/qmk_fpm</code></p>
-<div class="sourceCode" id="cb103"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&quot;deb https://linux.qmk.fm/ </span><span class="va">$(</span><span class="ex">lsb_release</span> <span class="at">--codename</span> <span class="at">--short</span><span class="va">)</span><span class="st"> main&quot;</span> <span class="kw">|</span> <span class="fu">tee</span> /etc/apt/sources.list.d/qmk.list</span>
-<span id="cb103-2"><a href="#cb103-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO</span> <span class="at">-</span> https://linux.qmk.fm/gpg_pubkey.txt <span class="kw">|</span> <span class="ex">gpg</span> <span class="at">--dearmor</span> <span class="kw">|</span> <span class="fu">tee</span> /etc/apt/trusted.gpg.d/qmk-gpg-pubkey.gpg <span class="op">&gt;</span> /dev/null</span>
-<span id="cb103-3"><a href="#cb103-3" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> update <span class="kw">&amp;&amp;</span> <span class="ex">upgrade</span></span>
-<span id="cb103-4"><a href="#cb103-4" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install qmk</span></code></pre></div>
+<div class="sourceCode" id="cb105"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&quot;deb https://linux.qmk.fm/ </span><span class="va">$(</span><span class="ex">lsb_release</span> <span class="at">--codename</span> <span class="at">--short</span><span class="va">)</span><span class="st"> main&quot;</span> <span class="kw">|</span> <span class="fu">tee</span> /etc/apt/sources.list.d/qmk.list</span>
+<span id="cb105-2"><a href="#cb105-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO</span> <span class="at">-</span> https://linux.qmk.fm/gpg_pubkey.txt <span class="kw">|</span> <span class="ex">gpg</span> <span class="at">--dearmor</span> <span class="kw">|</span> <span class="fu">tee</span> /etc/apt/trusted.gpg.d/qmk-gpg-pubkey.gpg <span class="op">&gt;</span> /dev/null</span>
+<span id="cb105-3"><a href="#cb105-3" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> update <span class="kw">&amp;&amp;</span> <span class="ex">upgrade</span></span>
+<span id="cb105-4"><a href="#cb105-4" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install qmk</span></code></pre></div>
 <blockquote>
 <p>[!NOTES] In Debian repositories there is also a <code>qmk</code>
-package</p>
+package.</p>
 </blockquote>
-<h4 id="signal-signal"><code>signal</code> <img
-src="https://img.shields.io/badge/office_application-document_viewer-blue?style=flat-square"
-alt="signal" /></h4>
-<div class="sourceCode" id="cb104"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-O-</span> https://updates.signal.org/desktop/apt/keys.asc <span class="kw">|</span> <span class="ex">gpg</span> <span class="at">--dearmor</span> <span class="op">&gt;</span> signal-desktop-keyring.gpg</span>
-<span id="cb104-2"><a href="#cb104-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> signal-desktop-keyring.gpg <span class="kw">|</span> <span class="fu">tee</span> /usr/share/keyrings/signal-desktop-keyring.gpg <span class="op">&gt;</span> /dev/null</span>
-<span id="cb104-3"><a href="#cb104-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb104-4"><a href="#cb104-4" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&#39;deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main&#39;</span> <span class="kw">|</span><span class="dt">\</span></span>
-<span id="cb104-5"><a href="#cb104-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tee</span> /etc/apt/sources.list.d/signal-xenial.list</span>
-<span id="cb104-6"><a href="#cb104-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb104-7"><a href="#cb104-7" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> update</span>
-<span id="cb104-8"><a href="#cb104-8" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install signal</span></code></pre></div>
-<h4 id="typora"><code>typora</code></h4>
-<div class="sourceCode" id="cb105"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO</span> <span class="at">-</span> https://typora.io/linux/public-key.asc <span class="kw">|</span> <span class="fu">tee</span> /etc/apt/trusted.gpg.d/typora.asc</span>
-<span id="cb105-2"><a href="#cb105-2" aria-hidden="true" tabindex="-1"></a><span class="ex">add-apt-repository</span> <span class="st">&#39;deb https://typora.io/linux ./&#39;</span></span>
-<span id="cb105-3"><a href="#cb105-3" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> update <span class="kw">&amp;&amp;</span> <span class="ex">apt</span> upgrade</span>
-<span id="cb105-4"><a href="#cb105-4" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install typora</span></code></pre></div>
-<h4 id="vscode"><code>vscode</code></h4>
+<h5 id="signal"><code>signal</code></h5>
 <div class="sourceCode" id="cb106"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO-</span> https://packages.microsoft.com/keys/microsoft.asc</span>
-<span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a><span class="ex">gpg</span> <span class="at">--dearmor</span> <span class="op">&gt;</span> packages.microsoft.gpg</span>
-<span id="cb106-3"><a href="#cb106-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install</span> <span class="at">-D</span> <span class="at">-o</span> root <span class="at">-g</span> root <span class="at">-m</span> 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg</span>
-<span id="cb106-4"><a href="#cb106-4" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&quot;deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main&quot;</span> <span class="kw">|</span> <span class="fu">tee</span> /etc/apt/sources.list.d/vscode.list <span class="op">&gt;</span> /dev/null</span>
-<span id="cb106-5"><a href="#cb106-5" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-f</span> packages.microsoft.gpg</span>
-<span id="cb106-6"><a href="#cb106-6" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> update <span class="kw">&amp;&amp;</span> <span class="ex">apt</span> upgrade</span>
-<span id="cb106-7"><a href="#cb106-7" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install code</span></code></pre></div>
-<h4 id="zotero"><code>zotero</code></h4>
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-O-</span> https://updates.signal.org/desktop/apt/keys.asc <span class="kw">|</span> <span class="ex">gpg</span> <span class="at">--dearmor</span> <span class="op">&gt;</span> signal-desktop-keyring.gpg</span>
+<span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> signal-desktop-keyring.gpg <span class="kw">|</span> <span class="fu">tee</span> /usr/share/keyrings/signal-desktop-keyring.gpg <span class="op">&gt;</span> /dev/null</span>
+<span id="cb106-3"><a href="#cb106-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-4"><a href="#cb106-4" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&#39;deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main&#39;</span> <span class="kw">|</span><span class="dt">\</span></span>
+<span id="cb106-5"><a href="#cb106-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tee</span> /etc/apt/sources.list.d/signal-xenial.list</span>
+<span id="cb106-6"><a href="#cb106-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb106-7"><a href="#cb106-7" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> update</span>
+<span id="cb106-8"><a href="#cb106-8" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install signal</span></code></pre></div>
+<h5 id="typora"><code>typora</code></h5>
+<div class="sourceCode" id="cb107"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO</span> <span class="at">-</span> https://typora.io/linux/public-key.asc <span class="kw">|</span> <span class="fu">tee</span> /etc/apt/trusted.gpg.d/typora.asc</span>
+<span id="cb107-2"><a href="#cb107-2" aria-hidden="true" tabindex="-1"></a><span class="ex">add-apt-repository</span> <span class="st">&#39;deb https://typora.io/linux ./&#39;</span></span>
+<span id="cb107-3"><a href="#cb107-3" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> update <span class="kw">&amp;&amp;</span> <span class="ex">apt</span> upgrade</span>
+<span id="cb107-4"><a href="#cb107-4" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install typora</span></code></pre></div>
+<h5 id="vscode"><code>vscode</code></h5>
+<div class="sourceCode" id="cb108"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO-</span> https://packages.microsoft.com/keys/microsoft.asc</span>
+<span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a><span class="ex">gpg</span> <span class="at">--dearmor</span> <span class="op">&gt;</span> packages.microsoft.gpg</span>
+<span id="cb108-3"><a href="#cb108-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install</span> <span class="at">-D</span> <span class="at">-o</span> root <span class="at">-g</span> root <span class="at">-m</span> 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg</span>
+<span id="cb108-4"><a href="#cb108-4" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&quot;deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main&quot;</span> <span class="kw">|</span> <span class="fu">tee</span> /etc/apt/sources.list.d/vscode.list <span class="op">&gt;</span> /dev/null</span>
+<span id="cb108-5"><a href="#cb108-5" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-f</span> packages.microsoft.gpg</span>
+<span id="cb108-6"><a href="#cb108-6" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> update <span class="kw">&amp;&amp;</span> <span class="ex">apt</span> upgrade</span>
+<span id="cb108-7"><a href="#cb108-7" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install code</span></code></pre></div>
+<h5 id="zotero"><code>zotero</code></h5>
 <p>Visit <a
 href="https://www.zotero.org/download/">https://www.zotero.org/download/</a>
 and download the latest version of Zotero. As <code>root</code>:</p>
-<div class="sourceCode" id="cb107"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /opt</span>
-<span id="cb107-2"><a href="#cb107-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://download.zotero.org/client/release/7.0.22/Zotero-7.0.22_linux-x86_64.tar.bz2</span>
-<span id="cb107-3"><a href="#cb107-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-xjvf</span> Zotero-7.0.22_linux-x86_64.tar.bz2</span>
-<span id="cb107-4"><a href="#cb107-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> Zotero-7.0.22_linux-x86_64.tar.bz2</span>
-<span id="cb107-5"><a href="#cb107-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> zotero</span>
-<span id="cb107-6"><a href="#cb107-6" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> Zotero_linux-x86_64</span>
-<span id="cb107-7"><a href="#cb107-7" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> <span class="pp">*</span> /opt/zotero/</span>
-<span id="cb107-8"><a href="#cb107-8" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /opt</span>
-<span id="cb107-9"><a href="#cb107-9" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> Zotero_linux-x86_64</span>
-<span id="cb107-10"><a href="#cb107-10" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /</span>
-<span id="cb107-11"><a href="#cb107-11" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> +x /opt/zotero/set_launcher_icon</span>
-<span id="cb107-12"><a href="#cb107-12" aria-hidden="true" tabindex="-1"></a><span class="ex">./opt/zotero/set_launcher_icon</span> <span class="co"># or bash /opt/zotero/set_launcher_icon</span></span>
-<span id="cb107-13"><a href="#cb107-13" aria-hidden="true" tabindex="-1"></a><span class="fu">ln</span> <span class="at">-s</span> /opt/zotero/zotero.desktop /home/naf/.local/share/applications/zotero.desktop</span></code></pre></div>
-<h5 id="zotero-better-bibtex"><code>zotero-better-bibtex</code></h5>
+<div class="sourceCode" id="cb109"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /opt</span>
+<span id="cb109-2"><a href="#cb109-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://download.zotero.org/client/release/7.0.22/Zotero-7.0.22_linux-x86_64.tar.bz2</span>
+<span id="cb109-3"><a href="#cb109-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-xjvf</span> Zotero-7.0.22_linux-x86_64.tar.bz2</span>
+<span id="cb109-4"><a href="#cb109-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> Zotero-7.0.22_linux-x86_64.tar.bz2</span>
+<span id="cb109-5"><a href="#cb109-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> zotero</span>
+<span id="cb109-6"><a href="#cb109-6" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> Zotero_linux-x86_64</span>
+<span id="cb109-7"><a href="#cb109-7" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> <span class="pp">*</span> /opt/zotero/</span>
+<span id="cb109-8"><a href="#cb109-8" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /opt</span>
+<span id="cb109-9"><a href="#cb109-9" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> Zotero_linux-x86_64</span>
+<span id="cb109-10"><a href="#cb109-10" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /</span>
+<span id="cb109-11"><a href="#cb109-11" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> +x /opt/zotero/set_launcher_icon</span>
+<span id="cb109-12"><a href="#cb109-12" aria-hidden="true" tabindex="-1"></a><span class="ex">./opt/zotero/set_launcher_icon</span> <span class="co"># or bash /opt/zotero/set_launcher_icon</span></span>
+<span id="cb109-13"><a href="#cb109-13" aria-hidden="true" tabindex="-1"></a><span class="fu">ln</span> <span class="at">-s</span> /opt/zotero/zotero.desktop /home/naf/.local/share/applications/zotero.desktop</span></code></pre></div>
+<h6 id="zotero-better-bibtex"><code>zotero-better-bibtex</code></h6>
 <p>Visit <a
 href="https://github.com/retorquere/zotero-better-bibtex/releases/latest">https://github.com/retorquere/zotero-better-bibtex/releases/latest</a>
 and download <code>.xpi</code>file.</p>
@@ -1004,62 +1020,72 @@ From File…’</li>
 <li>Choose .xpi that you’ve just downloaded, click ‘Install’</li>
 <li>Restart Zotero if you’re using Zotero 6</li>
 </ol>
-<h2 id="notes">Notes</h2>
-<h3 id="delete-gnome-games.">Delete Gnome games.</h3>
-<div class="sourceCode" id="cb108"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> purge gnome-games</span></code></pre></div>
-<h3 id="change-background-grub">Change Background Grub</h3>
-<p>Set <code>grub</code> background image
-<code>/etc/default/grub</code>.</p>
-<div class="sourceCode" id="cb109"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="va">GRUB_BACKGROUND</span><span class="op">=</span><span class="st">&quot;&quot;</span></span></code></pre></div>
-<div class="sourceCode" id="cb110"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="ex">update-grub</span></span></code></pre></div>
-<h3 id="change-gdm-background">Change GDM Background</h3>
-<p>Copy image to <code>/usr/share/images/vendor-logos/</code>:</p>
-<div class="sourceCode" id="cb111"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> syenasweta-logo-text-version-64.svg /usr/share/images/vendor-logos/</span></code></pre></div>
-<p>Edit file in <code>/etc/gdm3/greeter.dconf-defaults</code>. Add
-this:</p>
-<div class="sourceCode" id="cb112"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Login manager options</span></span>
-<span id="cb112-2"><a href="#cb112-2" aria-hidden="true" tabindex="-1"></a><span class="co"># =====================</span></span>
-<span id="cb112-3"><a href="#cb112-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[org/gnome/login-screen]</span></span>
-<span id="cb112-4"><a href="#cb112-4" aria-hidden="true" tabindex="-1"></a><span class="co">#logo=&#39;/usr/share/images/vendor-logos/logo-text-version-64.png&#39;</span></span>
-<span id="cb112-5"><a href="#cb112-5" aria-hidden="true" tabindex="-1"></a><span class="va">logo</span><span class="op">=</span><span class="st">&#39;/usr/share/images/vendor-logos/syenasweta-logo-text-version-64.svg&#39;</span></span></code></pre></div>
-<p>And:</p>
-<div class="sourceCode" id="cb113"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb113-1"><a href="#cb113-1" aria-hidden="true" tabindex="-1"></a><span class="ex">dpkg-reconfigure</span> gdm3</span></code></pre></div>
-<ul>
-<li><code>https://wiki.debian.org/GDM#Customizing_the_GDM_appearance</code></li>
-</ul>
-<h3 id="disable-the-user-list">Disable the user list</h3>
-<p>Edit file in <code>/etc/gdm3/greeter.dconf-defaults</code>. Uncomment
-<code>disable-user-list=true</code>:</p>
-<div class="sourceCode" id="cb114"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="co"># - Disable user list</span></span>
-<span id="cb114-2"><a href="#cb114-2" aria-hidden="true" tabindex="-1"></a><span class="co"># disable-user-list=true</span></span>
-<span id="cb114-3"><a href="#cb114-3" aria-hidden="true" tabindex="-1"></a><span class="ex">disable-user-list=true</span></span></code></pre></div>
-<p>And:</p>
-<div class="sourceCode" id="cb115"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a><span class="ex">dpkg-reconfigure</span> gdm3</span></code></pre></div>
-<h3 id="configure-lamp">Configure LAMP</h3>
-<ul>
-<li>https://wiki.debian.org/LaMp</li>
-</ul>
-<h2 id="add-on">Add on</h2>
-<ul>
-<li><p>https://extensions.gnome.org/extension/4269/alphabetical-app-grid/</p></li>
-<li><p>https://cockpit-project.org/running.html#debian</p></li>
-<li><p>Zoom</p></li>
-<li><p>Bibtex</p></li>
-</ul>
-<h2 id="flathub">Flathub</h2>
+<h2 id="flathub-software-repositories">Flathub Software
+Repositories</h2>
 <p>I am not using Flatpak yet.</p>
 <ul>
 <li>https://flathub.org/apps/org.kde.kdenlive</li>
 <li>https://flathub.org/apps/com.obsproject.Studio</li>
 <li>https://flathub.org/apps/dev.storyapps.starc</li>
 </ul>
+<h2 id="configuration">Configuration</h2>
+<h3 id="delete-gnome-games">Delete Gnome Games</h3>
+<div class="sourceCode" id="cb110"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> purge gnome-games</span></code></pre></div>
+<h3 id="change-background-grub">Change Background Grub</h3>
+<p>Set <code>grub</code> background image
+<code>/etc/default/grub</code>.</p>
+<div class="sourceCode" id="cb111"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a><span class="va">GRUB_BACKGROUND</span><span class="op">=</span><span class="st">&quot;&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb112"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="ex">update-grub</span></span></code></pre></div>
+<h3 id="change-gdm-background">Change GDM Background</h3>
+<p>Copy image to <code>/usr/share/images/vendor-logos/</code>:</p>
+<div class="sourceCode" id="cb113"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb113-1"><a href="#cb113-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> syenasweta-logo-text-version-64.svg /usr/share/images/vendor-logos/</span></code></pre></div>
+<p>Edit file in <code>/etc/gdm3/greeter.dconf-defaults</code>. Add
+this:</p>
+<div class="sourceCode" id="cb114"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Login manager options</span></span>
+<span id="cb114-2"><a href="#cb114-2" aria-hidden="true" tabindex="-1"></a><span class="co"># =====================</span></span>
+<span id="cb114-3"><a href="#cb114-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[org/gnome/login-screen]</span></span>
+<span id="cb114-4"><a href="#cb114-4" aria-hidden="true" tabindex="-1"></a><span class="co">#logo=&#39;/usr/share/images/vendor-logos/logo-text-version-64.png&#39;</span></span>
+<span id="cb114-5"><a href="#cb114-5" aria-hidden="true" tabindex="-1"></a><span class="va">logo</span><span class="op">=</span><span class="st">&#39;/usr/share/images/vendor-logos/syenasweta-logo-text-version-64.svg&#39;</span></span></code></pre></div>
+<p>And:</p>
+<div class="sourceCode" id="cb115"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a><span class="ex">dpkg-reconfigure</span> gdm3</span></code></pre></div>
+<ul>
+<li><code>https://wiki.debian.org/GDM#Customizing_the_GDM_appearance</code></li>
+</ul>
+<h3 id="disable-the-user-list">Disable the user list</h3>
+<p>Edit file in <code>/etc/gdm3/greeter.dconf-defaults</code>. Uncomment
+<code>disable-user-list=true</code>:</p>
+<div class="sourceCode" id="cb116"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="co"># - Disable user list</span></span>
+<span id="cb116-2"><a href="#cb116-2" aria-hidden="true" tabindex="-1"></a><span class="co"># disable-user-list=true</span></span>
+<span id="cb116-3"><a href="#cb116-3" aria-hidden="true" tabindex="-1"></a><span class="ex">disable-user-list=true</span></span></code></pre></div>
+<p>And:</p>
+<div class="sourceCode" id="cb117"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="ex">dpkg-reconfigure</span> gdm3</span></code></pre></div>
+<h3 id="lamp-settings">LAMP Settings</h3>
+<ul>
+<li>https://wiki.debian.org/LaMp</li>
+</ul>
+<h3 id="extensions">Extensions</h3>
+<ul>
+<li>https://extensions.gnome.org/extension/4269/alphabetical-app-grid/</li>
+<li>https://cockpit-project.org/running.html#debian</li>
+<li>Zoom</li>
+<li>Bibtex</li>
+</ul>
+<h2 id="bibliography">Bibliography</h2>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Verse 3 from At-Talaq.<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 </body>
 </html>
